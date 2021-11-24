@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage[english, danish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{datetime}
+\usepackage{comment}
+\usepackage{xcolor}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{subfig}
+\usepackage{varwidth}
+\usepackage{tabularx}
+\usepackage{ltablex}
+\usepackage{float}
+\usepackage[hidelinks]{hyperref}
+
+
+%Make Code look nice%
+\usepackage{minted}
+\usepackage{tcolorbox}
+\usepackage{etoolbox}
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+
+%math%
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{fourier}
+
+%Subfiles%
+\usepackage{lastpage}
+\usepackage{subfiles}
+
+\title{MAD Assignment 1 \\ Assignment 1}
+\author{Ask Jensen}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Ask Jensen}
+\lhead{Assignemtn 1}
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+\thispagestyle{empty}
+\end{titlepage}
+
+\rfoot{Side \thepage \hspace{1pt} af \pageref{mylastpage}}
+\thispagestyle{empty}
+\setcounter{page}{0}
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+\newpage 
+
+%-----------------
+% OPGAVE 1: 
+%-----------------
+%\include{Sections/Section_A.tex}
+\subfile{Sections/Section_A.tex}
+
+%-----------------
+% OPGAVE 2: 
+%-----------------
+\subfile{Sections/Section_B.tex}
+%-----------------
+% OPGAVE 3: 
+%-----------------
+\subfile{Sections/Section_C.tex}
+\label{mylastpage}
+%-----------------
+% OPGAVE 4: 
+%-----------------
+\subfile{Sections/Section_D.tex}
+%\newpage
+\thispagestyle{empty}
+%-----------------
+% Bibliografi
+%-----------------
+\end{document}

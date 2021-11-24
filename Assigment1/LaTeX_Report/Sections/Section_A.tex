@@ -1,0 +1,36 @@
+\section{Problem 1}
+the exercise is to compute the partial derivations of the following
+three problems each containing a different function.
+\subsection{(a)}
+Considering the function, it is fairly straight forward to compute the derivative with respect
+to x and y. Both derivations will be done using the power rule: $x^n = nx^{n-1}$
+$$f(x,y) = x^4y^3+x^5-e^y$$
+\textbf{Answer:}
+\\
+calculating $\frac{\partial}{\partial x}$
+$$f'_{x} = 4x^3y^3+5x^4$$
+calculating $\frac{\partial}{\partial y}$
+$$f'_{y} = x^43y^2-e^y$$
+It is worth mentioning, that the exponent ($e^y$) will derive to itself even though
+the power function states otherwise.
+\subsection{(b)}
+This function is bit harder to compute.
+$$f(x,y) = \frac{1}{\sqrt{x^3+xy+y^2}}$$
+I will start by deriving the innter function with respect to x and y since these derivations
+are going to be used later on in the calculations.
+\\
+\\
+calculating $\frac{\partial}{\partial x}$
+$$f'_{x} = 3x^2+y$$
+calculating $\frac{\partial}{\partial y}$
+$$f'_{y} = x+2y$$
+\textbf{Answer:}\\
+I will rewrite the function using simple fraction rules in order to make the function
+a bit easier to work with.
+$$f(x,y) = (x^3+xy+y^2)^{-\frac{1}{2}}$$
+applying the power rule
+$$f(x,y) = -\frac{1}{2}(x^3+xy+y^2)^{-\frac{3}{2}}$$
+applying the chain rule
+$$f(x,y) = -\frac{1}{2}(x^3+xy+y^2)^{-\frac{3}{2}} \cdot (3x^2+y)$$
+\subsection{(c)}
+$$f(x,y) = \frac{x^3+y^2}{x+y}$$
