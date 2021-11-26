@@ -33,7 +33,7 @@
 \usepackage{lastpage}
 \usepackage{subfiles}
 
-\title{MAD Assignment 1 \\ Assignment 1}
+\title{MAD Assignment 1}
 \author{Ask Jensen}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -48,7 +48,7 @@
 \thispagestyle{empty}
 \end{titlepage}
 
-\rfoot{Side \thepage \hspace{1pt} af \pageref{mylastpage}}
+\rfoot{Side \thepage \hspace{1pt} of \pageref{mylastpage}}
 \thispagestyle{empty}
 \setcounter{page}{0}
 \tableofcontents
@@ -70,13 +70,13 @@
 % OPGAVE 3: 
 %-----------------
 \subfile{Sections/Section_C.tex}
-\label{mylastpage}
 %-----------------
 % OPGAVE 4: 
 %-----------------
 \subfile{Sections/Section_D.tex}
+\label{mylastpage}
 %\newpage
-\thispagestyle{empty}
+%\thispagestyle{empty}
 %-----------------
 % Bibliografi
 %-----------------

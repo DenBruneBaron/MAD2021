@@ -14,7 +14,7 @@ $$f'_{y} = x^43y^2-e^y$$
 It is worth mentioning, that the exponent ($e^y$) will derive to itself even though
 the power function states otherwise.
 \subsection{(b)}
-This function is bit harder to compute.
+This function is bit harder to compute. I will be using the power rule: $x^n = nx^{n-1}$ and the chain rule: $f(g(x)) = f'(g(x)) \cdot g'(x)$
 $$f(x,y) = \frac{1}{\sqrt{x^3+xy+y^2}}$$
 I will start by deriving the innter function with respect to x and y since these derivations
 are going to be used later on in the calculations.
@@ -32,5 +32,29 @@ applying the power rule
 $$f(x,y) = -\frac{1}{2}(x^3+xy+y^2)^{-\frac{3}{2}}$$
 applying the chain rule
 $$f(x,y) = -\frac{1}{2}(x^3+xy+y^2)^{-\frac{3}{2}} \cdot (3x^2+y)$$
+calculating $\frac{\partial}{\partial x}$
+$$f'_{x} = -\frac{3x^2+y}{2(x^3+xy+y^2)^{\frac{3}{2}}}$$
+I will not be showing the full calculation for $f'_{y}$ since it derives trivially in the same was as $f'_{x}$,
+with the only exception being that instead of using the chain rule with the derivation of x you now use the derivative of y
+thus I will only show the last two steps
+\\
+\\
+applying the chain rule
+$$f(x,y) = -\frac{1}{2}(x^3+xy+y^2)^{-\frac{3}{2}} \cdot (x^43y^2-e^y)$$
+calculating $\frac{\partial}{\partial x}$
+$$f'_{x} = -\frac{x+2y}{2(x^3+xy+y^2)^{\frac{3}{2}}}$$
 \subsection{(c)}
+I order to compute this function I will be using the power rule: $x^n = nx^{n-1}$ and the quotient rule: $(\frac{f(x)}{g(x)})' = \frac{g(x)f'(x) - f(x)g'(x)}{g(x)^2}$
 $$f(x,y) = \frac{x^3+y^2}{x+y}$$
+\textbf{Answer:}\\
+I will start by finding the derivations for f(x) and f(y) aswell for g(x) and g(y). these calulations are done using the power rule. 
+Having these calculating done, it's a simple matter of substituting with the "new" expressions in the qoutient rule
+\\
+$f'_{x} \cdot g(x) = 3x^2(x+y)$\\
+$f'_{y} \cdot g(y) = 2y(x+y)$\\
+$f(x) \cdot g'_{x} = 1\cdot(x^3+y^2)$\\
+$f(y) \cdot g'_{y} = 1\cdot(x^3+y^2)$\\
+\\
+\\
+$$f'_{x} = \frac{3x^2(x+y) - (x^3+y^2)}{(x+y)^2}$$
+$$f'_{y} = \frac{2y(x+y)) - (x^3+y^2)}{(x+y)^2}$$

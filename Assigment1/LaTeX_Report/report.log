@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.24)  24 NOV 2021 22:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.24)  26 NOV 2021 22:23
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -976,28 +976,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--24
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.36 $$f(x,y) = \frac{x^3+y^2}{x+y}$$
-                                      [1
+l.36 ...rac{3x^2+y}{2(x^3+xy+y^2)^{\frac{3}{2}}}$$
+                                                   [1
 
-]) (./Sections/Section_B.tex) (./Sections/Section_C.tex) (./Sections/Section_D.tex) 
+]
+Underfull \hbox (badness 10000) in paragraph at lines 36--43
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--59
+
+ []
+
+) (./Sections/Section_B.tex [2]) (./Sections/Section_C.tex) (./Sections/Section_D.tex) 
 AED: lastpage setting LastPage
-[2] (./report.aux)
+[3] (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: AB8B22F2C8D7A3934E87F4F38A24A869;1149.
  ) 
 Here is how much of TeX's memory you used:
- 27361 strings out of 478353
- 522505 string characters out of 5839074
- 846753 words of memory out of 5000000
- 44930 multiletter control sequences out of 15000+600000
- 476056 words of font info for 106 fonts, out of 8000000 for 9000
+ 27376 strings out of 478353
+ 522697 string characters out of 5839074
+ 848733 words of memory out of 5000000
+ 44940 multiletter control sequences out of 15000+600000
+ 480590 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,12n,133p,1104b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 85i,14n,133p,1104b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
 {g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on report.pdf (4 pages, 56635 bytes).
+Output written on report.pdf (5 pages, 61745 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
+ 142 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
  125 words of extra memory for PDF output out of 10000 (max. 10000000)
 

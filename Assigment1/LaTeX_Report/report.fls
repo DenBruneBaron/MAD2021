@@ -1376,6 +1376,10 @@ INPUT ./Sections/Section_B.tex
 INPUT Sections/Section_B.tex
 INPUT ./Sections/Section_B.tex
 INPUT Sections/Section_B.tex
+INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/tfm/public/fourier/futri8t.tfm
+INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/vf/public/fourier/futsy.vf
+INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/tfm/public/fourier/fourier-ms.tfm
+INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/tfm/public/fourier/fourier-mcl.tfm
 INPUT ./Sections/Section_C.tex
 INPUT Sections/Section_C.tex
 INPUT ./Sections/Section_C.tex
@@ -1384,6 +1388,8 @@ INPUT ./Sections/Section_D.tex
 INPUT Sections/Section_D.tex
 INPUT ./Sections/Section_D.tex
 INPUT Sections/Section_D.tex
+INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/vf/public/fourier/futri8t.vf
+INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/tfm/public/fourier/fourier-alt-ita.tfm
 INPUT report.aux
 INPUT ./report.out
 INPUT ./report.out
