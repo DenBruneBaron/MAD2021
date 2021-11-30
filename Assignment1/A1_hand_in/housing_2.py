@@ -38,9 +38,10 @@ model_all.fit(X_train, t_train)
 all_values = model_all.w
 
 # Prints all the weights from fit() 
+print("----------------------------------------")
 for i in range(len(all_values)):
     print("\tw%i : %s" %(i, model_all.w[i]))
-
+print("----------------------------------------")
 # (d) evaluation of results
 pred_single = model_single.predict(X_test[:,0])
 pred_all = model_all.predict(X_test)
