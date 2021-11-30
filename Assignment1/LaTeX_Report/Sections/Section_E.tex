@@ -1,0 +1,25 @@
+\section{Problem 5}
+$$ \mathcal{L} = \sum\limits_{n=1}^{N} (\mathbf{w}^{T} \mathbf{x}_{n} - t_{n})^2 $$ 
+$$  = (\textbf{Xw}-t)^{T} (\textbf{Xw}-t)^{T} $$
+$$  = ((\textbf{Xw})^{T} - t^{T}) (\textbf{Xw}-t)^{T} $$
+$$  = \textbf{w}^{T} \textbf{X}^{T} \textbf{Xw} - 2\textbf{w}^{T}\textbf{X}^T t + t^{T}t $$
+\\
+using "case 4" from the table 1.14 
+$$\textbf{w}^{T} \textbf{X}^{T} \textbf{Xw} = 2\textbf{X}^{T}\textbf{Xw} $$
+and "case 1" gives me
+$$2\textbf{w}^{T}\textbf{X}^Tt = 2\textbf{X}^{T} t$$
+thus
+$$\frac{\partial\mathcal{L}}{\partial w} = 2\textbf{X}^{T}\textbf{Xw} - 2\textbf{X}^{T} t = 0$$
+\\
+\\
++2 and -2 cancel out leaving me with 
+$$ \textbf{X}^{T}\textbf{Xw} - \textbf{X}^{T} t = 0 $$
+$$ \textbf{X}^{T}\textbf{Xw} = \textbf{X}^{T} t $$
+multiplying both sides with $ (\textbf{X}^{T}\textbf{X})^{-1} $
+which can be rewritten as \textbf{I} which is the denotation of the Identity matrix
+$$ \textbf{I}\textbf{w} = (\textbf{X}^{T}\textbf{X})^{-1} \textbf{X}^{T} t $$
+Multiplying the vector \textbf{w} with the Identity matrix, will simply return the vector \textbf{w} thus the result is
+$$ \hat{\textbf{w}} = (\textbf{X}^{T}\textbf{X})^{-1} \textbf{X}^{T} t $$
+\\
+The total training loss is the average loss multiplyed by the number of instances in the dataset.  
+which is excatily the same as the value we obtain from the avereage loss function
