@@ -31,6 +31,13 @@ for i in range(len(all_weights)):
     print("\tw%i : %s" %(i, model_all.w[i]))
 print("----------------------------------------")
 
+print(type(x))
+print(type(y))
+
+# def get_model(A, y, lamb=0):
+#     n_col = A[1]
+#     return np.linalg.lstsq(A.T.dot(A) + lamb * np.identity(n_col), A.T.dot(y))
+# print(get_model(x,y,lamb=0))
 
 plt.title('Mens 100m sprint results')
 plt.xlabel('Olympic year')
@@ -43,5 +50,5 @@ poly =np.polyfit(x,y,1)
 print("values from polynomial fit:", poly)
 yplot = poly[1]+poly[0]*(xplot)
 plt.plot(xplot,yplot, c='r')
-plt.show()
+#plt.show()
 
