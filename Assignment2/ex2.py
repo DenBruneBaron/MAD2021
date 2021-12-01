@@ -3,6 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
+
+
 raw = np.genfromtxt('men-olympics-100.txt', delimiter=' ')
 
 transposed = raw.T

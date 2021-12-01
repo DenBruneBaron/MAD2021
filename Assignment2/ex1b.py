@@ -22,9 +22,16 @@ model_all = linweighreg.LinearRegression()
 model_all.fit(X_train, t_train)
 all_values = model_all.w
 
+
+
 # Prints all the weights from fit() 
 for i in range(len(all_values)):
     print("\tw%i : %s" %(i, model_all.w[i]))
 
-# evaluation of results
+# compute corrospondingp predictions in boston_test set
 pred_all = model_all.predict(X_test)
+print(pred_all)
+
+# computes the weighted average 
+avg = (sum(X_train) * sum(all_values)) / sum(all_values)
+print(avg)
