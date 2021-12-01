@@ -1,0 +1,32 @@
+\section{Problem 2}
+In order to solve these exercises I will make use of \emph{Tabel 1.4} in the book "A first couse in machine learning"
+\subsection{(a)}
+$f(\overline{x})=\overline{x}^{T}\overline{x}+c$
+\\
+\textbf{Answer:}
+\\
+Here we have the "third case" of the table, 
+$\overline{x}^{T}\overline{x} \Rightarrow \nabla f(\overline{x}) = 2\overline{x}$\\
+The constant c is simply discarded, when differentiating.
+\subsection{(b)}
+$f(\overline{x})=\overline{x}^{T}\overline{b}$
+\\
+\textbf{Answer:}
+\\
+Here we have the "first case" of the table, 
+$\overline{x}^{T}\overline{b} \Rightarrow \nabla f(\overline{x}) = \overline{b}$
+
+
+\subsection{(c)}
+$f(\overline{x})=\overline{x}^{T}A\overline{x}+\overline{b}^{T}\overline{x}+c$
+\\
+\textbf{Answer:}
+\\
+Here we have the a combination of "fourth case" and the "second case" from the table.
+\\
+$\overline{x}^{T}A\overline{x} \Rightarrow 2A\overline{x} $\\
+and\\
+$\overline{b}^{T}\overline{x} \Rightarrow \overline{b} $\\
+Combining the two, we get the result: $\nabla f(\overline{x}) = 2A\overline{x} + \overline{b}$\\
+The constant c is simply discarded, when differentiating.
+
