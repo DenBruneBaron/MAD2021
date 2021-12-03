@@ -56,7 +56,7 @@ plt.scatter(x_single,y_single)
 #plt.legend()
 plt.show()
 
-x_all = t_train
+x_all = t_test
 y_all = pred_all
 plt.title('Fitting on all features')
 plt.xlabel('True House Prices')

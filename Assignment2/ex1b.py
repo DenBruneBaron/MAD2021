@@ -30,8 +30,22 @@ for i in range(len(all_values)):
 
 # compute corrospondingp predictions in boston_test set
 pred_all = model_all.predict(X_test)
-print(pred_all)
+#print(pred_all)
+
+
+
 
 # computes the weighted average 
-avg = (sum(X_train) * sum(all_values)) / sum(all_values)
-print(avg)
+#avg = (sum(X_train) * sum(all_values)) / sum(all_values)
+#print(avg)
+
+
+x_single = t_test
+y_single = pred_all
+plt.title('True House Prices vs. Weighted Estimates')
+plt.xlabel('True House Prices')
+plt.ylabel('Estimates')
+plt.plot(t_test, t_test, c='r')
+plt.scatter(x_single,y_single)
+#plt.legend()
+plt.show()

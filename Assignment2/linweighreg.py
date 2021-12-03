@@ -28,18 +28,52 @@ class LinearRegression():
         X = np.array(X).reshape((n, -1))
         t = np.array(t).reshape((n, 1))
 
+
         # prepend a column of ones
         ones = np.ones((X.shape[0], 1))
         X = np.concatenate((ones, X), axis=1)
 
-        # compute weights (solve system)
-        a = np.dot(X.T, X)
-        b = np.dot(X.T, t)
+        A = np.identity(len(t))
+        A_pow = A*(t**2)
+        print("Diagonal M: ",A_pow.shape)
+        print("t shape : ",t.shape)
+        #print(A_pow)
 
-        self.w = np.linalg.solve(a,b)
-        
+
+        # compute weights (solve system)
+        a = np.dot(X.T, A_pow)
+        print("a shape:", a.shape)
+        b = np.dot(a, X)
+        print("b shape:", b.shape)
+        c = np.dot(a,t)
+        print("c shape:", c.shape)
+
+        self.w = np.linalg.solve(b,c)
+
         #return(self.w)
 
+
+
+#---------------------------------------------------
+    def fit_LOOCV(self, X, t, lamda, N):
+        #Create identity matrix
+        idm = np.identity(len(X))
+
+        # X^T * X
+        a = np.dot(X.T, X)
+
+        # X^T * t
+        b = np.dot(X.T, t)
+
+        # N * Lamda * identity_matrix
+        INLamda = (N * lamda) * idm
+
+        # First block of equation (X^T * X + N * Lamda * identity_matrix)
+        fst_block = a * INLamda
+
+        self.w = np.linalg.solve(fst_block, b)
+
+#--------------------------------------------------
 
     def predict(self, X):
         """
