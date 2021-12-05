@@ -57,21 +57,25 @@ class LinearRegression():
 #---------------------------------------------------
     def fit_LOOCV(self, X, t, lamda, N):
         # Create identity matrix
+        n = X.shape[0]
+        X = np.array(X).reshape((n, -1))
+        t = np.array(t).reshape((n, 1))
         idm = np.identity(len(X))
-
+        
         # X^T * X
-        a = np.dot(X.T, X)
-
+        a1 = np.dot(X.T, X)
+        print("a shape:", a1.shape)
         # X^T * t
-        b = np.dot(X.T, t)
-
+        b2 = np.dot(X.T, t)
+        print("b shape:", b2.shape)
         # N * Lamda * identity_matrix
-        INLamda = lamda * idm
-
+        INLamda = N * idm
+        #print("INL shape:", INLamda)
+        #print(INLamda)
         # First block of equation (X^T * X + N * Lamda * identity_matrix)
-        fst_block = a * INLamda
+        #fst_block = a * INLamda
 
-        self.w = np.linalg.solve(fst_block, b)
+        #self.w = np.linalg.solve(fst_block, b)
 
 #--------------------------------------------------
 

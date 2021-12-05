@@ -22,7 +22,6 @@ x = OL_year
 
 #First place values
 y = OL_run_times
-N_len = len(x)
 
 model_all = linweighreg.LinearRegression()
 model_all.fit(x,y)
@@ -34,7 +33,7 @@ print("----------------------------------------")
 
 
 model_LOOCV = linweighreg.LinearRegression()
-fuck = model_LOOCV.fit_LOOCV(x,y,lambda_values, N_len)
+fuck = model_LOOCV.fit_LOOCV(x,y,lambda_values, x)
 print(fuck)
 
 

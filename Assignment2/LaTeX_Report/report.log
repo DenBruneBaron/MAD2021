@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.24)  4 DEC 2021 13:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.24)  5 DEC 2021 21:11
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -996,25 +996,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--24
 l.7 ...^{\alpha-1} \cdot e^{- \beta x^{\alpha}} $$
                                                    [1
 
-]) (./Sections/Section_ex4.tex) (./Sections/Section_ex5.tex) 
+]
+Underfull \hbox (badness 10000) in paragraph at lines 25--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--38
+
+ []
+
+[2]) (./Sections/Section_ex4.tex) [3] 
 AED: lastpage setting LastPage
-[2] (./report.aux)
+(./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 5C8F9DF62FAB8D5E40AE4F815AF914F9;767.
+(rerunfilecheck)             Checksum: 4FB6E88060772DE72D26E1CC9F2A32F3;676.
  ) 
 Here is how much of TeX's memory you used:
- 27371 strings out of 478353
- 522706 string characters out of 5839074
+ 27365 strings out of 478353
+ 522571 string characters out of 5839074
  847733 words of memory out of 5000000
- 44935 multiletter control sequences out of 15000+600000
+ 44932 multiletter control sequences out of 15000+600000
  489332 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,12n,133p,1105b,457s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 85i,12n,133p,1105b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
 {g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on report.pdf (4 pages, 64652 bytes).
+Output written on report.pdf (5 pages, 68492 bytes).
 PDF statistics:
  117 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
+ 95 compressed objects within 1 object stream
  16 named destinations out of 1000 (max. 500000)
- 85 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 77 words of extra memory for PDF output out of 10000 (max. 10000000)
 

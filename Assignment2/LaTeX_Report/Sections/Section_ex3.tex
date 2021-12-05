@@ -25,5 +25,34 @@ function I have:
 $$ f(x) = 1 - e^{-\frac{1}{4}x^2} = 1 - e^{-\frac{x^2}{4}} $$
 \\
 To answer the first question I can simply calculate f(5). Since I'm asked to answer the probability
-for the chip to live \emph{more} than four years
+for the chip to live \emph{more} than four years. It is important to note that when the value = 1 the
+chip is dead. Otherwise, the chip would become better over time.
+$f(5) = 0.998069 $ This means, that after 5 years, the chip is almost certanly dead.
+\\
+\\
+To calculate the probability that the chip will die somewhere between the interval $[5;10]$
+I can do it like so:
+$$f(10)-f(4) = 0.0183156$$ This means that the chip has $\approx 1.83\%$ chance of surviving. So to make this 
+more readble I can say:
+\\
+$$1 - (f(10)-f(4)) \approx 98.16\% \quad \text{chance of death}$$ in the interval from 5 to 10 years.
 \subsection{(c)}
+Finding the median of the function. I can simply set it equal to $\frac{1}{2}$ and solve it for x.
+$$1 - e^{- \beta x^{\alpha}} = \frac{1}{2}$$
+simple rewriting
+$$1 - \frac{1}{2} = e^{- \beta x^{\alpha}}$$
+multiplying with $ln()$ to remove the exponent
+$$ ln(\frac{1}{2}) = - \beta x^{\alpha} $$
+dividing with $-\beta$
+$$\frac{ln(\frac{1}{2})}{-\beta} = x^{\alpha} $$
+$ln(\frac{1}{2})$ is the same as $-ln(2)$ so rewriting and removing the minuses
+$$\frac{ln(2)}{\beta} = x^{\alpha} $$
+taking $ln(x^{\alpha})$ to move the $\alpha$
+$$\ln( \frac{ln(2)}{\beta} ) = \alpha \cdot ln(x) $$
+moving alpha
+$$\frac{\ln( \frac{ln(2)}{\beta} )}{\alpha} = ln(x)$$
+We already know that in order to remove the exponenet, we can use ln. so to remove ln
+I can add back the exponent, which gives me the answer
+\\
+\textbf{Answer:}
+$$e^{\frac{\ln( \frac{ln(2)}{\beta} )}{\alpha}} = x$$
