@@ -2,25 +2,24 @@ import linweighreg
 import numpy as np
 import matplotlib.pyplot as plt
 
-
-
-
+# Reads the data from the file
 raw = np.genfromtxt('men-olympics-100.txt', delimiter=' ')
-
 transposed = raw.T
 
-#print(transposed)
-
-#Extract the first "row", (index 1, since the array is 0-indexed) from raw
+# Extract the first "row", (index 1, since the array is 0-indexed) from raw
 OL_year = raw[:,0].T
-print(OL_year)
-#Extract the second "row", (index 1, since the array is 0-indexed) from raw
+
+# Extract the second "row", (index 1, since the array is 0-indexed) from raw
 OL_run_times = raw[:,1].T
-print(OL_run_times)
+
+# Create lamda values for LOOCV
 lambda_values = np.logspace(-8, 0, 100, base=10)
-print(lambda_values.shape)
-#olympic years
+print("lambda shape:", lambda_values.shape)
+#print(lambda_values)
+
+#Olympic years
 x = OL_year 
+
 #First place values
 y = OL_run_times
 N_len = len(x)

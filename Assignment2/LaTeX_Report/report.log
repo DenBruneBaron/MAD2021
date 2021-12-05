@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.24)  1 DEC 2021 17:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.24)  4 DEC 2021 13:30
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -976,35 +976,45 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7.6> not available
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--22
+Underfull \hbox (badness 10000) in paragraph at lines 11--15
 
  []
 
-) (./Sections/Section_ex2.tex) (./Sections/Section_ex3.tex) (./Sections/Section_ex4.tex) (./Sections/Section_ex5.tex) 
-AED: lastpage setting LastPage
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--24
+
+ []
+
+) (./Sections/Section_ex2.tex) (./Sections/Section_ex3.texpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.88 \end{document}
-                    [1
+l.7 ...^{\alpha-1} \cdot e^{- \beta x^{\alpha}} $$
+                                                   [1
 
-] [2] (./report.aux)
+]) (./Sections/Section_ex4.tex) (./Sections/Section_ex5.tex) 
+AED: lastpage setting LastPage
+[2] (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 37BDF9D75E537B44A0C9A22B52E661BF;533.
+(rerunfilecheck)             Checksum: 5C8F9DF62FAB8D5E40AE4F815AF914F9;767.
  ) 
 Here is how much of TeX's memory you used:
- 27361 strings out of 478353
- 522579 string characters out of 5839074
+ 27371 strings out of 478353
+ 522706 string characters out of 5839074
  847733 words of memory out of 5000000
- 44937 multiletter control sequences out of 15000+600000
- 483829 words of font info for 106 fonts, out of 8000000 for 9000
+ 44935 multiletter control sequences out of 15000+600000
+ 489332 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,11n,133p,1105b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 85i,12n,133p,1105b,457s stack positions out of 5000i,500n,10000p,200000b,80000s
 {g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on report.pdf (4 pages, 57794 bytes).
+Output written on report.pdf (4 pages, 64652 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 117 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
+ 85 words of extra memory for PDF output out of 10000 (max. 10000000)
 

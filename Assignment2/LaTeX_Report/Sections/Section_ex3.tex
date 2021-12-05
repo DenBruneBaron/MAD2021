@@ -1,1 +1,29 @@
 \section{Problem 3}
+\subsection{(a)}
+The a PDF is the derivative of a CDF.
+\\
+The function $e^{- \beta x^{\alpha}}$ is a composition of f(g(x)). 
+Thus the after applying the chainrule and deriving where $g(x) = - \beta x^{\alpha} $ :
+$$\frac{d}{dx} f(g(x)) = \frac{d}{dx} (- \beta x^{\alpha} \cdot e^{{g(x)}}) = - \beta \alpha x^{\alpha-1} \cdot e^{- \beta x^{\alpha}} $$
+\\
+Thus the PDF is:
+\[f(x) \begin{cases}
+    - \beta \alpha x^{\alpha-1} \cdot e^{- \beta x^{\alpha}} & \quad \text{if} \quad x > 0 \\
+    0 & \quad \text{otherwise} \\
+ \end{cases}
+\]
+
+\subsection{(b)}
+In this question there are two subquestions.
+\begin{enumerate}
+    \item What is the probability that the chip works longer than four years?
+    \item What is the probability that the chip stops working in the time interval [5;
+    10] years?
+\end{enumerate}
+I'm given two values for $\alpha$ and $\beta$ stubstituting these values into the original
+function I have:
+$$ f(x) = 1 - e^{-\frac{1}{4}x^2} = 1 - e^{-\frac{x^2}{4}} $$
+\\
+To answer the first question I can simply calculate f(5). Since I'm asked to answer the probability
+for the chip to live \emph{more} than four years
+\subsection{(c)}
