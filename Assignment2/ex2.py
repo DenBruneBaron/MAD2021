@@ -32,16 +32,20 @@ for i in range(len(all_weights)):
 print("----------------------------------------")
 
 
-model_LOOCV = linweighreg.LinearRegression()
-fuck = model_LOOCV.fit_LOOCV(x,y,lambda_values, x)
-print(fuck)
+N = len(y)
+
+def RMSE(t,tp):
+    res = np.sqrt(np.square(np.subtract(t,tp)).mean())
+    print(res)
+    return(res)
+
+for i in lambda_values:
+    model_LOOCV = linweighreg.LinearRegression()
+    LOOCV_res = model_LOOCV.fit_LOOCV(x, y, i, N)
+    loss = RMSE(LOOCV_res.w, y)
+    print("lam=%.10f and loss=%.10f" % (lambda_values, loss))
 
 
-
-# def get_model(A, y, lamb=0):
-#     n_col = A[1]
-#     return np.linalg.lstsq(A.T.dot(A) + lamb * np.identity(n_col), A.T.dot(y))
-# print(get_model(x,y,lamb=0))
 
 plt.title('Mens 100m sprint results')
 plt.xlabel('Olympic year')
@@ -58,5 +62,3 @@ print("values from polynomial fit:", poly)
 
 yplot = poly[1]+poly[0]*(xplot)
 plt.plot(xplot,yplot, c='r')
-#plt.show()
-

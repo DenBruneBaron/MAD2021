@@ -25,3 +25,74 @@ $$ \textbf{I}\textbf{w} = (\textbf{X}^{T} \textbf{A} \textbf{X})^{-1} \textbf{X}
 \\
 Multiplying the vector \textbf{w} with the Identity matrix, will simply return the vector \textbf{w} thus the result is
 $$ \hat{\textbf{w}} = (\textbf{X}^{T} \textbf{A} \textbf{X})^{-1} \textbf{X}^{T} \textbf{A} t $$
+\\
+\subsection{(b)}
+\begin{enumerate}
+    \item What do you expect to happen?
+        I expect that the regression will have an overall better fit.
+    \item What do you observe?
+        That the predictions has been scattered more than previously. However, smaller values now fit
+        the regression line better. But points that fitted better before, might become outliers.
+    \item Do the additional weights have an influence on the outcome
+        The weights has as mentioned before, a positive influence on points with a low value, however
+        a negative influence on values that might fit the regression well from the beginning.
+
+\end{enumerate}
+
+\textbf{Source code for ex1b}
+\begin{lstlisting}
+    # fit linear regression model using all features
+    print("Linear fit:")
+    model_all = linweighreg.LinearRegression()
+    model_all.fit(X_train, t_train)
+    all_values = model_all.w
+
+    # Prints all the weights from fit() 
+    for i in range(len(all_values)):
+        print("\tw%i : %s" %(i, model_all.w[i]))
+
+    # compute corrospondingp predictions in boston_test set
+    pred_all = model_all.predict(X_test)
+
+    # Plot the regression
+    x_single = t_test
+    y_single = pred_all
+    plt.title('True House Prices vs. Weighted Estimates')
+    plt.xlabel('True House Prices')
+    plt.ylabel('Estimates')
+    plt.plot(t_test, t_test, c='r')
+    plt.scatter(x_single,y_single)
+    plt.show()
+\end{lstlisting}
+
+\textbf{linweighreg.py}
+
+\begin{lstlisting}
+    def fit(self, X, t):
+    """
+    Fits the linear regression model.
+    
+    Parameters
+    ----------
+    X : Array of shape [n_samples, n_features]
+    t : Array of shape [n_samples, 1]
+    """        
+    # TODO: YOUR CODE HERE
+    n = X.shape[0]
+    X = np.array(X).reshape((n, -1))
+    t = np.array(t).reshape((n, 1))
+    
+    # prepend a column of ones
+    ones = np.ones((X.shape[0], 1))
+    X = np.concatenate((ones, X), axis=1)
+    
+    A = np.identity(len(t))
+    A_pow = A*(t**2)
+    
+    # compute weights (solve system)
+    a = np.dot(X.T, A_pow)
+    b = np.dot(a, X)
+    c = np.dot(a,t)
+    
+    self.w = np.linalg.solve(b,c)
+\end{lstlisting}

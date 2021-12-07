@@ -1,1 +1,93 @@
 \section{Problem 4}
+\subsection{(a)}
+Since Peter dosn't have any prior conviction and the exercise is to calculate $ X_{speak} $ I will
+only be looking at point 2),4) and 6) given with the exercise.
+\\
+I will be substituting the with the values given in the above points from right to left, since this gives to most readability in context to the
+exercise.
+\\
+\\
+$ P(\mathtt{Conviction}) = P(\mathtt{Conviction} | \mathtt{Court}) P(\mathtt{Court}\; \cap\; \mathtt{Speaks}\; \cap\; \mathtt{NC}) $
+\\
+$ P(\mathtt{Conviction}) = P(\mathtt{Conviction} | \mathtt{Court}) \cdot 0.002 $
+\\
+$ P(\mathtt{Conviction}) = 0.5 \cdot 0.002 = 0.001 $
+\\
+$ \text{Peters conviction} = 5\; \mathtt{years} \cdot 0.75\; =\; 3.75\ \mathtt{years} $
+\\
+\[P(X = x) \begin{cases}
+    0.001 & \quad \text{for} \quad x = 3.75\ \text{years} \\
+    0.998 & \quad \text{for} \quad x = 0 \quad (\text{no prison time}) \\
+ \end{cases}
+\]
+\\
+$EX_{speaks}\; =\; 0.001 \cdot 3.75 + 0.998 \cdot 0 = 0.00375$
+
+\subsection{(b)}
+I will be using the same procedure as in 4a. With the exception that now Peter will remain silent meaning I
+will be using point 1), 4), 5) and 6)
+\\
+\\
+$ P(\mathtt{Conviction}) = P(\mathtt{Conviction} | \mathtt{Court})\; P(\mathtt{Court}\; \cap\; \mathtt{Silent}\; \cap\; \mathtt{NC}) $
+\\
+$ P(\mathtt{Conviction}) = P(\mathtt{Conviction} | \mathtt{Court}) \cdot 0.002 $
+\\
+$ P(\mathtt{Conviction}) = (1 - (0.5 \cdot \frac{1}{4})) \cdot 0.001 $
+\\
+$ P(\mathtt{Conviction}) = 0.875 \cdot 0.001 = 0.000875 $
+\\
+$ \text{Peters conviction} = 5\; \mathtt{years} $
+\\
+\[P(X = x) \begin{cases}
+    0.000875 & \quad \text{for} \quad x = 5\ \text{years} \\
+    0.999125 & \quad \text{for} \quad x = 0 \quad (\text{no prison time}) \\
+ \end{cases}
+\]
+\\
+$EX_{silent}\; =\; 0.000875 \cdot 5 + 0.999125 \cdot 0 = 0.004375$
+
+\subsection{(c)}
+Brian talks and is previously convicted. I will be using point 1),3),4),5) and 6) in order to compute
+$Y_{speaks} \quad \text{and} \quad Y_{silent}$ for Brian
+\\
+\\
+$ P(\mathtt{Conviction}) = P(\mathtt{Conviction} | \mathtt{Court})\; P(\mathtt{Court}\; \cap\; \mathtt{Silent}\; \cap\; \mathtt{C}) $
+\\
+$ P(\mathtt{Conviction}) = P(\mathtt{Conviction} | \mathtt{Court}) \cdot 0.005 $
+\\
+$ P(\mathtt{Conviction}) = (1 - 0.1) \cdot 0.005 = 0.0045$
+\\
+$ \text{Brians conviction} = 5\; \mathtt{years} \cdot 0.75\; =\; 3.75\ \mathtt{years} $
+\\
+\[P(Y = y) \begin{cases}
+    0.0045 & \quad \text{for} \quad y = 3.75\ \text{years} \\
+    0.9955 & \quad \text{for} \quad y = 0 \quad (\text{no prison time}) \\
+ \end{cases}
+\]
+\\
+$EY_{speaks}\; =\; 0.0045 \cdot 3.75 +0.9955 \cdot 0 = 0.016875$
+\\
+\\
+$ P(\mathtt{Conviction}) = P(\mathtt{Conviction} | \mathtt{Court})\; P(\mathtt{Court}\; \cap\; \mathtt{Silent}\; \cap\; \mathtt{C}) $
+\\
+$ P(\mathtt{Conviction}) = P(\mathtt{Conviction} | \mathtt{Court}) \cdot 0.001 $
+\\
+$ P(\mathtt{Conviction}) = (1 - (0.5 \cdot \frac{0.1}{4})) \cdot 0.001 = 0.0045$
+\\
+$ P(\mathtt{Conviction}) = 0.975 \cdot 0.001 = 0.000975 $
+\\
+$ \text{Brians conviction} = 5\; \mathtt{years} \cdot 0.75\; =\; 3.75\ \mathtt{years} $
+\\
+\[P(Y = y) \begin{cases}
+    0.000975 & \quad \text{for} \quad y = 3.75\ \text{years} \\
+    0.999025 & \quad \text{for} \quad y = 0 \quad (\text{no prison time}) \\
+ \end{cases}
+\]
+\\
+$EY_{silent}\; =\; 0.000975 \cdot 3.75 + 0.999025 \cdot 0 = 0.016875$
+\\
+\\
+Thus for Peter
+$$\mathtt{EX_{speak}} \quad < \quad \mathtt{EX_{silent}}$$
+and for Brian
+$$\mathtt{EY_{speak}} \quad > \quad \mathtt{EY_{silent}}$$

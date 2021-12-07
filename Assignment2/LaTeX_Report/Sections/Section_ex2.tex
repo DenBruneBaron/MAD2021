@@ -1,2 +1,96 @@
 \section{Problem 2}
+Some of the code has been implemented but is not finished. See the following source code
+\\
+\textbf{Source code for running LOOCV}
+\begin{lstlisting}
+    # Reads the data from the file
+    raw = np.genfromtxt('men-olympics-100.txt', delimiter=' ')
+    transposed = raw.T
 
+    # Extract the first "row", (index 1, since the array is 0-indexed) from raw
+    OL_year = raw[:,0].T
+
+    # Extract the second "row", (index 1, since the array is 0-indexed) from raw
+    OL_run_times = raw[:,1].T
+
+    # Create lamda values for LOOCV
+    lambda_values = np.logspace(-8, 0, 100, base=10)
+    print("lambda shape:", lambda_values.shape)
+    #print(lambda_values)
+
+    #Olympic years
+    x = OL_year 
+
+    #First place values
+    y = OL_run_times
+
+    model_all = linweighreg.LinearRegression()
+    model_all.fit(x,y)
+    all_weights = model_all.w
+    print("----------------------------------------")
+    for i in range(len(all_weights)):
+        print("\tw%i : %s" %(i, model_all.w[i]))
+    print("----------------------------------------")
+
+
+    N = len(y)
+
+    def RMSE(t,tp):
+        res = np.sqrt(np.square(np.subtract(t,tp)).mean())
+        print(res)
+        return(res)
+
+    for i in lambda_values:
+        model_LOOCV = linweighreg.LinearRegression()
+        LOOCV_res = model_LOOCV.fit_LOOCV(x, y, i, N)
+        loss = RMSE(LOOCV_res.w, y)
+        print("lam=%.10f and loss=%.10f" % (lambda_values, loss))
+
+
+
+    plt.title('Mens 100m sprint results')
+    plt.xlabel('Olympic year')
+    plt.ylabel('1st place 100m track time')
+    plt.scatter(x, y)
+
+    xplot=np.linspace(1896,2008,100)
+    poly =np.polyfit(x,y,1)
+
+    xplot=np.linspace(1896,2008,100)
+    poly =np.polyfit(x,y,1)
+
+    print("values from polynomial fit:", poly)
+
+    yplot = poly[1]+poly[0]*(xplot)
+    plt.plot(xplot,yplot, c='r')
+\end{lstlisting}
+
+\textbf{Code for the fit\_LOOCV.}
+
+\begin{lstlisting}
+    def fit_LOOCV(self, X, t, lamda, N):
+    # Create identity matrix
+    n = X.shape[0]
+    X = np.array(X).reshape((n, -1))
+    t = np.array(t).reshape((n, 1))
+    idm = np.identity(X.shape[1])
+    
+    # X^T * X 
+    xTx = np.dot(X.T, X)
+    print("xTx shape:", xTx.shape)
+
+    # X^T * t
+    xTt = np.dot(X.T, t)
+    print("xTt shape:", xTt.shape)
+
+    # N * Lamda * identity_matrix
+    INLamda = N * lamda * idm
+    print("Lambda shape",INLamda.shape)
+
+    fst_block = xTx + INLamda
+    print("fst shape:", fst_block.shape) 
+
+    #coef = np.dot(np.dot(np.linalg.inv(fst_block), X.T), t)
+    self.w = np.linalg.solve(fst_block,xTt)
+\end{lstlisting}
+.
