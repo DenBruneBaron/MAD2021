@@ -1,0 +1,25 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{\PYGZsh{} gets the fourth eigenvector}
+    \PYG{n}{e4} \PYG{o}{=} \PYG{n}{PCevecs}\PYG{p}{[:,} \PYG{l+m+mi}{3}\PYG{p}{]}
+    \PYG{c+c1}{\PYGZsh{} gets the fourth eigenvalue}
+    \PYG{n}{lambda4} \PYG{o}{=} \PYG{n}{PCevals}\PYG{p}{[}\PYG{l+m+mi}{3}\PYG{p}{]}
+    \PYG{c+c1}{\PYGZsh{} In case the naming std is confusing \PYGZhy{}\PYGZhy{}}
+    \PYG{c+c1}{\PYGZsh{} the eigenvalues have a statistical interpretation}
+    \PYG{c+c1}{\PYGZsh{} print(std4)}
+    \PYG{n}{std4} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{n}{lambda4}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} Makes matrix filled with zeros}
+    \PYG{n}{diatoms\PYGZus{}along\PYGZus{}pc} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{zeros}\PYG{p}{((}\PYG{l+m+mi}{7}\PYG{p}{,} \PYG{l+m+mi}{180}\PYG{p}{))}
+
+    \PYG{c+c1}{\PYGZsh{} Iterates the length of the matrix}
+    \PYG{c+c1}{\PYGZsh{} For each row, add the mean diatom with added}
+    \PYG{c+c1}{\PYGZsh{} values}
+    \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{7}\PYG{p}{):}
+        \PYG{n}{diatoms\PYGZus{}along\PYGZus{}pc}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{n}{mean\PYGZus{}diatom} \PYG{o}{+} \PYG{p}{(} \PYG{n}{e4} \PYG{o}{*} \PYG{n}{std4} \PYG{o}{*} \PYG{p}{(}\PYG{n}{i}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{3}\PYG{p}{))}
+
+    \PYG{c+c1}{\PYGZsh{} Plotting each diatom}
+    \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{7}\PYG{p}{):}
+        \PYG{n}{plot\PYGZus{}diatom}\PYG{p}{(}\PYG{n}{diatoms\PYGZus{}along\PYGZus{}pc}\PYG{p}{[}\PYG{n}{i}\PYG{p}{])}
+
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Diatom shape along PC1\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}
