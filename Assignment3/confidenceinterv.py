@@ -41,7 +41,6 @@ for i in range(nexp):
     sig = np.var(x, ddof=1) # TODO: adapt for b)
     fac1 = scipy.stats.norm.ppf((1-gamma)/2, 0, 1) # computes the 0.5% quantile of a Gaussian, roughly -2.576  
     fac2 = scipy.stats.norm.ppf((1-gamma)/2 + gamma, 0, 1) # computes the 99.5% quantile of a Gaussian, roughly 2.576
-    fac3 = scipy.stats.t.ppf((1-gamma)/2 )
     xmean = np.mean(x) # Sample mean
     a = xmean - fac2*sig/np.sqrt(n) 
     b = xmean - fac1*sig/np.sqrt(n) 
