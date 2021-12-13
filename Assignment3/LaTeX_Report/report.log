@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.23)  13 DEC 2021 10:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.23)  13 DEC 2021 15:05
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **c:/Users/Ask/Documents/Datalogi/KU/2_aar/MAD2021/Assignment3/LaTeX_Report/report.tex
@@ -127,7 +127,7 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Cskip=\skip52
 ) (c:/texlive/2021/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 77.
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
 ) (c:/texlive/2021/texmf-dist/tex/latex/ifplatform/ifplatform.sty
 Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
  (c:/texlive/2021/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
@@ -146,12 +146,7 @@ Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )) (c:/texlive/2021/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-)
-
-Package ifplatform Warning: 
-    shell escape is disabled, so I can only detect \ifwindows.
-
-) (c:/texlive/2021/texmf-dist/tex/generic/xstring/xstring.sty (c:/texlive/2021/texmf-dist/tex/generic/xstring/xstring.tex
+)) (c:/texlive/2021/texmf-dist/tex/generic/xstring/xstring.sty (c:/texlive/2021/texmf-dist/tex/generic/xstring/xstring.tex
 \integerpart=\count284
 \decimalpart=\count285
 )
@@ -179,21 +174,9 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@every@listing=\toks22
 \c@listing=\count289
 )
-runsystem(if not exist _minted-report mkdir _minted-report)...disabled (restricted).
+runsystem(if not exist _minted-report mkdir _minted-report)...executed.
 
-
-
-c:/Users/Ask/Documents/Datalogi/KU/2_aar/MAD2021/Assignment3/LaTeX_Report/report.tex:7: Package minted Error: You must invoke LaTeX with the -shell-escape flag.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 \usepackage
-               {tcolorbox}
-Pass the -shell-escape flag to LaTeX. Refer to the minted.sty documentation for more information.
-
-(c:/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+ (c:/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2021/06/14 version 4.51 text color boxes
  (c:/texlive/2021/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks23
@@ -846,23 +829,235 @@ Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footer
 \f@nch@O@olf=\skip77
 \f@nch@O@orf=\skip78
 )
-runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > report.aex <nul: /p x=^%~$PATH:i>> report.aex)...disabled (restricted).
+runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > report.aex <nul: /p x=^%~$PATH:i>> report.aex)...executed.
+
+runsystem(del report.aex)...executed.
+
+ (c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count372
+\l__pdf_internal_box=\box86
+) (./report.aux)
+\openout1 = `report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 45.
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 45.
+ (c:/texlive/2021/texmf-dist/tex/latex/fourier/fmlfutm.fd
+File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
+)
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 45.
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 45.
+ (c:/texlive/2021/texmf-dist/tex/latex/fourier/fmsfutm.fd
+File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
+)
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 45.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 45.
+ (c:/texlive/2021/texmf-dist/tex/latex/fourier/fmxfutm.fd
+File: fmxfutm.fd futm-extension
+)
+LaTeX Font Info:    ... okay on input line 45.
+ (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count373
+\scratchdimen=\dimen288
+\scratchbox=\box87
+\nofMPsegments=\count374
+\nofMParguments=\count375
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count376
+\MPscratchDim=\dimen289
+\MPnumerator=\count377
+\makeMPintoPDFobject=\count378
+\everyMPtoPDFconversion=\toks52
+) (c:/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (c:/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+ (c:/texlive/2021/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring OFF on input line 45.
+ (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+ (c:/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (c:/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count379
+)
+LaTeX Info: Redefining \ref on input line 45.
+LaTeX Info: Redefining \pageref on input line 45.
+LaTeX Info: Redefining \nameref on input line 45.
+ (./report.out) (./report.out)
+\@outlinefile=\write7
+\openout7 = `report.out'.
+
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 45.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 45.
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 45.
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line 49.
+ (c:/texlive/2021/texmf-dist/tex/latex/fourier/fmlfutmi.fd
+File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
+)
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 11.03998pt on input line 49.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 49.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 49.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
+ (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
+ (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 11.03998pt on input line 49.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 49.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 49.
+ [1
+
+{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./report.toc
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 3.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 3.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 3.
+)
+\tf@toc=\write8
+\openout8 = `report.toc'.
+
+ [0] (./Sections/Section_ex1.tex
+\openout3 = `report.pyg'.
+
+ (./_minted-report/default-pyg-prefix.pygstyle) (./_minted-report/default.pygstyle) (./_minted-report/D41D8CD98F00B204E9800998ECF8427E7C2E7F49E087B8E8E8DF5244CE287E39.pygtex
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1.
+ (c:/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+))
+<Figures/Proportion_of_variance.JPG, id=64, 529.22719pt x 400.49625pt>
+File: Figures/Proportion_of_variance.JPG Graphic file (type jpg)
+<use Figures/Proportion_of_variance.JPG>
+Package pdftex.def Info: Figures/Proportion_of_variance.JPG  used on input line 36.
+(pdftex.def)             Requested size: 310.4979pt x 234.97075pt.
+\openout3 = `report.pyg'.
+
+ (./_minted-report/D41D8CD98F00B204E9800998ECF8427E7C2E7F49E087B8E8E8DF5244CE287E39.pygtex)
+<Figures/Result_of_diatoms.JPG, id=65, 297.36093pt x 234.8775pt>
+File: Figures/Result_of_diatoms.JPG Graphic file (type jpg)
+<use Figures/Result_of_diatoms.JPG>
+Package pdftex.def Info: Figures/Result_of_diatoms.JPG  used on input line 73.
+(pdftex.def)             Requested size: 310.4979pt x 245.26675pt.
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.65 
+      [1
+
+ <./Figures/Proportion_of_variance.JPG>] (./Sections/Section_ex2.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--22
+
+ []
 
 
-c:/Users/Ask/Documents/Datalogi/KU/2_aar/MAD2021/Assignment3/LaTeX_Report/report.tex:45: Emergency stop.
-<read 4> 
-         
-l.45 \begin{document}
-                     ^^M
-*** (cannot \read from terminal in nonstop modes)
+Underfull \hbox (badness 10000) in paragraph at lines 2--22
 
- 
+ []
+
+) (./Sections/Section_ex3.tex) (./Sections/Section_ex4.tex [2 <./Figures/Result_of_diatoms.JPG>]
+Overfull \hbox (2.95888pt too wide) in paragraph at lines 15--18
+\T1/futs/m/n/10 Performing the cor-rospon-ding t-test (As-su-m-ing that I ha-ve to per-form the cor-rospon-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--44
+
+ []
+
+\openout3 = `report.pyg'.
+
+(./_minted-report/D41D8CD98F00B204E9800998ECF8427E7C2E7F49E087B8E8E8DF5244CE287E39.pygtex)) [3] 
+AED: lastpage setting LastPage
+(./report.aux)
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 6F682EC2667E5F39012779F34B450072;754.
+runsystem(del report.pyg)...executed.
+
+ ) 
 Here is how much of TeX's memory you used:
- 26240 strings out of 478353
- 491800 string characters out of 5852100
- 829345 words of memory out of 5000000
- 43944 multiletter control sequences out of 15000+600000
- 407652 words of font info for 28 fonts, out of 8000000 for 9000
+ 27640 strings out of 478353
+ 517463 string characters out of 5852100
+ 848856 words of memory out of 5000000
+ 45183 multiletter control sequences out of 15000+600000
+ 481977 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,0n,133p,1110b,150s stack positions out of 5000i,500n,10000p,200000b,80000s
-c:/Users/Ask/Documents/Datalogi/KU/2_aar/MAD2021/Assignment3/LaTeX_Report/report.tex:45:  ==> Fatal error occurred, no output PDF file produced!
+ 99i,11n,133p,1110b,573s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on report.pdf (5 pages, 163213 bytes).
+PDF statistics:
+ 119 PDF objects out of 1000 (max. 8388607)
+ 97 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
+ 95 words of extra memory for PDF output out of 10000 (max. 10000000)
+

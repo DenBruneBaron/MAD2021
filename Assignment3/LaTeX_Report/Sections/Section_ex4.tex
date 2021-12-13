@@ -2,6 +2,18 @@
 \subsection{(a)}
 In this exercise I'm asked to choose the null hypothesis.
 \\
+My Null hypothesis is:, $ H_0 : \mu_0 = 0 $
+My alternative hypothesis is, $H_A : \mu \neq \mu_0$
+\\
+Which menas, that I assume that there is no difference in flowering time, since the value for $X_3 - Y_3 = -0.5$ showing that
+the scientists claim does not hold for all of the samples. With the specified
+alternative hypothesis, I would have to perform af two-sided t-test
+\\
+$ \mu_0 = 0 $ since the assumption is, that there is no difference between the two types of flowers
+
+\subsection{(b)}
+Performing the corrosponding t-test (Assuming that I have to perform the corrosponding thest to my claim in (a)).
+Following the "six steps" from the lecture. I will be starting from step 3 since both step one and two are defined in question (a).
 The dataset is $ X_i - Y_i $, which gives me
 \begin{center}
     \begin{tabular}{ |c|c|c|c|c| } 
@@ -11,17 +23,32 @@ The dataset is $ X_i - Y_i $, which gives me
     \end{tabular}
     \end{center}
 
-Calculating the observed mean = $ \frac{1 + 0.5 - 0.5 + 1.5 + 0.5}{5} = 0.6 $
-\\
-$ \mu_0 = 0 $ since the assumption is, that there is no difference between the two types of flowers
-\\
-My Null hypothesis is:, $ H_0 : \mu_0 = 0 $
-My alternative hypothesis is, $H_A : \mu \neq \mu_0$
-\\
-\\
-Calculating the standard deviation for my sample $ S = \sqrt{Var(Z)}$:
-$$ Var(Z) = \sum_{i=1}^{5} \frac{(x_i - \overline{x})^2}{n-1} $$
 
-$$ \frac{(1 - 0.6)^2 + (0.5 - 0.6)^2 + (-0.5 - 0.6)^2 + (1.5 - 0.6)^2 + (0.5 - 0.6)^2}{4} $$
+\noindent Calculating the observed mean = $ \frac{1 + 0.5 - 0.5 + 1.5 + 0.5}{5} = 0.6 $
+\\
+Calculating the standard deviation for my sample \\
+$ S = \sqrt{Var(Z)}$ \\
+\\
+$ Var(Z) = \sum_{i=1}^{5} \frac{(x_i - \overline{x})^2}{n-1} $ \\
+\\
+$ Var(Z) = \frac{(1 - 0.6)^2 + (0.5 - 0.6)^2 + (-0.5 - 0.6)^2 + (1.5 - 0.6)^2 + (0.5 - 0.6)^2}{4} = \frac{2.2}{4} = 0.55 $  
+\\
+\\
+$ S = \sqrt{0.55} = 0.7416$
+\\
+\\
+$t = \frac{\overline{x} - \mu_0}{S \sqrt{n}} = \frac{0.6 - 0}{0.7416 \sqrt{5}} = \frac{0.6}{0.3317} \approx 1.81 $
+\\
+\\
+I've calculated $c_{1}$ and $c_{2}$ using the following small code.
 
-$$ Var = (\frac{2.2}{4}) = 0.55 $$
+\begin{minted}[linenos, bgcolor = bg]{python}
+    import scipy.stats
+
+    gamma = 0.95
+    fac1 = scipy.stats.norm.ppf((1-gamma)/2, 0, 1)  
+    fac2 = scipy.stats.norm.ppf((1-gamma)/2 + gamma, 0, 1)
+
+    print(fac1)
+    print(fac2)
+\end{minted}
