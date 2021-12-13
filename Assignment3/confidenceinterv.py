@@ -30,16 +30,18 @@ n = 9
 gamma = 0.99 # 99 %
 
 # Number of experiments to carry out
-nexp = 20 # TODO: Change this when you have developed your code
+nexp = 10000 # TODO: Change this when you have developed your code
 
 
 counter = 0
 counter_c = 0
 for i in range(nexp):
     x = np.random.normal(mu,sigma,n) # simulates n realizations from a Gaussian with mean mu and var sigma^2
-    sig = sigma # TODO: adapt for b)
+    #sig = sigma # TODO: adapt for b)
+    sig = np.var(x, ddof=1) # TODO: adapt for b)
     fac1 = scipy.stats.norm.ppf((1-gamma)/2, 0, 1) # computes the 0.5% quantile of a Gaussian, roughly -2.576  
-    fac2 = scipy.stats.norm.ppf((1-gamma)/2 + gamma, 0, 1) # computes the 99.5% quantile of a Gaussian, roughly 2.576   
+    fac2 = scipy.stats.norm.ppf((1-gamma)/2 + gamma, 0, 1) # computes the 99.5% quantile of a Gaussian, roughly 2.576
+    fac3 = scipy.stats.t.ppf((1-gamma)/2 )
     xmean = np.mean(x) # Sample mean
     a = xmean - fac2*sig/np.sqrt(n) 
     b = xmean - fac1*sig/np.sqrt(n) 
