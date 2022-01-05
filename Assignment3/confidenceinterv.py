@@ -37,15 +37,18 @@ counter = 0
 counter_c = 0
 for i in range(nexp):
     x = np.random.normal(mu,sigma,n) # simulates n realizations from a Gaussian with mean mu and var sigma^2
-    #sig = sigma # TODO: adapt for b)
-    sig = np.var(x, ddof=1) # TODO: adapt for b)
+    sig = np.sqrt(np.var(x, ddof=1)) # TODO: adapt for b)
     fac1 = scipy.stats.norm.ppf((1-gamma)/2, 0, 1) # computes the 0.5% quantile of a Gaussian, roughly -2.576  
     fac2 = scipy.stats.norm.ppf((1-gamma)/2 + gamma, 0, 1) # computes the 99.5% quantile of a Gaussian, roughly 2.576
+    fac3 = scipy.stats.t.ppf((1+gamma)/2, n-1)
+    fac4 = scipy.stats.t.ppf((1+gamma)/2-gamma, n-1)
     xmean = np.mean(x) # Sample mean
     a = xmean - fac2*sig/np.sqrt(n) 
     b = xmean - fac1*sig/np.sqrt(n) 
-    ac = xmean - fac2*sig/np.sqrt(n) # TODO: adapt for c)
-    bc = xmean - fac1*sig/np.sqrt(n) # TODO: adapt for c)
+    ac = xmean - fac3*sig/np.sqrt(n) # TODO: adapt for c)
+    bc = xmean - fac4*sig/np.sqrt(n) # TODO: adapt for c)
+    
+
     
     # b) plotting and counting code
     if (a <= mu) & (mu <= b):

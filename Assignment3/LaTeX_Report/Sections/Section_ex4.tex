@@ -5,26 +5,30 @@ In this exercise I'm asked to choose the null hypothesis.
 My Null hypothesis is:, $ H_0 : \mu_0 = 0 $
 My alternative hypothesis is, $H_A : \mu \neq \mu_0$
 \\
-Which menas, that I assume that there is no difference in flowering time, since the value for $X_3 - Y_3 = -0.5$ showing that
+Which means, that I assume that there is no difference in flowering time, since the value $X_3 - Y_3 = -0.5$ shows that
 the scientists claim does not hold for all of the samples. With the specified
 alternative hypothesis, I would have to perform af two-sided t-test
 \\
 $ \mu_0 = 0 $ since the assumption is, that there is no difference between the two types of flowers
 
 \subsection{(b)}
-Performing the corrosponding t-test (Assuming that I have to perform the corrosponding thest to my claim in (a)).
+Performing the corrosponding t-test (Assuming that I have to perform the corrosponding test using my claim from (a)).
+\\
 Following the "six steps" from the lecture. I will be starting from step 3 since both step one and two are defined in question (a).
+\\
 The dataset is $ X_i - Y_i $, which gives me
+
 \begin{center}
     \begin{tabular}{ |c|c|c|c|c| } 
      \hline
       1 & 0.5 & -0.5 & 1.5 & 0.5\\ 
      \hline
     \end{tabular}
-    \end{center}
+\end{center}
 
-
-\noindent Calculating the observed mean = $ \frac{1 + 0.5 - 0.5 + 1.5 + 0.5}{5} = 0.6 $
+\noindent Calculating the observed mean:\\
+$ \frac{1 + 0.5 - 0.5 + 1.5 + 0.5}{5} = 0.6 $
+\\
 \\
 Calculating the standard deviation for my sample \\
 $ S = \sqrt{Var(Z)}$ \\
@@ -40,15 +44,42 @@ $ S = \sqrt{0.55} = 0.7416$
 $t = \frac{\overline{x} - \mu_0}{S \sqrt{n}} = \frac{0.6 - 0}{0.7416 \sqrt{5}} = \frac{0.6}{0.3317} \approx 1.81 $
 \\
 \\
-I've calculated $c_{1}$ and $c_{2}$ using the following small code.
+I've calculated $c_{1}$ and $c_{2}$ using the following code I made.
 
 \begin{minted}[linenos, bgcolor = bg]{python}
-    import scipy.stats
+    from scipy.stats import t
 
-    gamma = 0.95
-    fac1 = scipy.stats.norm.ppf((1-gamma)/2, 0, 1)  
-    fac2 = scipy.stats.norm.ppf((1-gamma)/2 + gamma, 0, 1)
+    # Mean of my sample
+    mean = 0.6
 
-    print(fac1)
-    print(fac2)
+    # Samples (5 flowers)
+    n_samples = 5
+
+    # I need to divide alpha since I'm making use of
+    # the two-side test
+    alpha_val = 0.05 / 2
+    std_deviation = 0.7416
+
+    # Performing the t.ppf, in order to find c1 and c2 
+    c1 = t.ppf(alpha_val, n_samples-1,
+               loc= mean, scale = std_deviation)
+
+    c2 = t.ppf((1 - alpha_val), n_samples-1, 
+               loc= mean, scale = std_deviation)
+
+    print("c1: lower_cutoff", c1)
+    print("c2: upper_cutoff", c2)
 \end{minted}
+
+\noindent which gives me:
+$$c_1 \approx -1.4590 \quad \quad \text{and} \quad \quad c_2 \approx = 2.6590 $$
+\\
+Since $c_1 < t < c_2 $ meaning that t is in the "acceptance" region, I can accept that 
+the flowering time with the two types of flowers appears to be indifferent.
+
+\subsection{(c)}
+No, it is not that simple. If the scientist were to multiply the whole dataset with
+a number $ k $ it would change the calculations of $ t $.
+The standard deviation will cause problems since the degrees of freedom will not be the same
+
+$$ Var^* = \sum_{i = 1}^{k \cdot n} \frac{(x_i - \mu)^2}{kn-1} \neq k \cdot \sum_{i = 1}^{ n} \frac{(x_i - \mu)^2}{n-1}$$

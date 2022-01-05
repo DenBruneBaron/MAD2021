@@ -1,10 +1,11 @@
 \babel@toc {danish}{}\relax 
 \contentsline {section}{\numberline {1}Problem 1}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}(a)}{1}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}(b)}{1}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Problem 2}{2}{section.2}%
-\contentsline {section}{\numberline {3}Problem 3}{3}{section.3}%
-\contentsline {subsection}{\numberline {3.1}(a)}{3}{subsection.3.1}%
-\contentsline {section}{\numberline {4}Problem 4}{3}{section.4}%
-\contentsline {subsection}{\numberline {4.1}(a)}{3}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}(b)}{3}{subsection.4.2}%
+\contentsline {subsection}{\numberline {1.2}(b)}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Problem 2}{4}{section.2}%
+\contentsline {section}{\numberline {3}Problem 3}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}(a)}{4}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Problem 4}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}(a)}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}(b)}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}(c)}{6}{subsection.4.3}%

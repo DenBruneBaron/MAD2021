@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{nexp}\PYG{p}{):}
+    \PYG{c+c1}{\PYGZsh{} simulates n realizations from a Gaussian}
+    \PYG{c+c1}{\PYGZsh{} with mean mu and var sigma\PYGZca{}2}
+    \PYG{n}{x} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{random}\PYG{o}{.}\PYG{n}{normal}\PYG{p}{(}\PYG{n}{mu}\PYG{p}{,}\PYG{n}{sigma}\PYG{p}{,}\PYG{n}{n}\PYG{p}{)}
+    \PYG{c+c1}{\PYGZsh{} TODO: adapt for b)}
+    \PYG{n}{sig} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{var}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{ddof}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{))}
+    \PYG{c+c1}{\PYGZsh{} computes the 0.5\PYGZpc{} quantile of a Gaussian, roughly \PYGZhy{}2.576}
+    \PYG{n}{fac1} \PYG{o}{=} \PYG{n}{scipy}\PYG{o}{.}\PYG{n}{stats}\PYG{o}{.}\PYG{n}{norm}\PYG{o}{.}\PYG{n}{ppf}\PYG{p}{((}\PYG{l+m+mi}{1}\PYG{o}{\PYGZhy{}}\PYG{n}{gamma}\PYG{p}{)}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{)}
+    \PYG{c+c1}{\PYGZsh{} computes the 99.5\PYGZpc{} quantile of a Gaussian, roughly 2.576}
+    \PYG{n}{fac2} \PYG{o}{=} \PYG{n}{scipy}\PYG{o}{.}\PYG{n}{stats}\PYG{o}{.}\PYG{n}{norm}\PYG{o}{.}\PYG{n}{ppf}\PYG{p}{((}\PYG{l+m+mi}{1}\PYG{o}{\PYGZhy{}}\PYG{n}{gamma}\PYG{p}{)}\PYG{o}{/}\PYG{l+m+mi}{2} \PYG{o}{+} \PYG{n}{gamma}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} computes the 0.5 quantile using the t\PYGZhy{}test}
+    \PYG{n}{fac3} \PYG{o}{=} \PYG{n}{scipy}\PYG{o}{.}\PYG{n}{stats}\PYG{o}{.}\PYG{n}{t}\PYG{o}{.}\PYG{n}{ppf}\PYG{p}{((}\PYG{l+m+mi}{1}\PYG{o}{+}\PYG{n}{gamma}\PYG{p}{)}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{n}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)}
+    \PYG{c+c1}{\PYGZsh{} computes the 99.5 quantile using the t\PYGZhy{}test}
+    \PYG{n}{fac4} \PYG{o}{=} \PYG{n}{scipy}\PYG{o}{.}\PYG{n}{stats}\PYG{o}{.}\PYG{n}{t}\PYG{o}{.}\PYG{n}{ppf}\PYG{p}{((}\PYG{l+m+mi}{1}\PYG{o}{+}\PYG{n}{gamma}\PYG{p}{)}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{o}{\PYGZhy{}}\PYG{n}{gamma}\PYG{p}{,} \PYG{n}{n}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)}
+    \PYG{n}{xmean} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{mean}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Sample mean}
+    \PYG{n}{a} \PYG{o}{=} \PYG{n}{xmean} \PYG{o}{\PYGZhy{}} \PYG{n}{fac2}\PYG{o}{*}\PYG{n}{sig}\PYG{o}{/}\PYG{n}{np}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{n}{n}\PYG{p}{)}
+    \PYG{n}{b} \PYG{o}{=} \PYG{n}{xmean} \PYG{o}{\PYGZhy{}} \PYG{n}{fac1}\PYG{o}{*}\PYG{n}{sig}\PYG{o}{/}\PYG{n}{np}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{n}{n}\PYG{p}{)}
+    \PYG{n}{ac} \PYG{o}{=} \PYG{n}{xmean} \PYG{o}{\PYGZhy{}} \PYG{n}{fac3}\PYG{o}{*}\PYG{n}{sig}\PYG{o}{/}\PYG{n}{np}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{n}{n}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} TODO: adapt for c)}
+    \PYG{n}{bc} \PYG{o}{=} \PYG{n}{xmean} \PYG{o}{\PYGZhy{}} \PYG{n}{fac4}\PYG{o}{*}\PYG{n}{sig}\PYG{o}{/}\PYG{n}{np}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{n}{n}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} TODO: adapt for c)}
+\end{Verbatim}

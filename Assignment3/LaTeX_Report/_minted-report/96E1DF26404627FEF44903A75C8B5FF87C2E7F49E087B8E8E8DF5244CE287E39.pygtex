@@ -1,0 +1,24 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k+kn}{from} \PYG{n+nn}{scipy.stats} \PYG{k+kn}{import} \PYG{n}{t}
+
+    \PYG{c+c1}{\PYGZsh{} Mean of my sample}
+    \PYG{n}{mean} \PYG{o}{=} \PYG{l+m+mf}{0.6}
+
+    \PYG{c+c1}{\PYGZsh{} Samples (5 flowers)}
+    \PYG{n}{n\PYGZus{}samples} \PYG{o}{=} \PYG{l+m+mi}{5}
+
+    \PYG{c+c1}{\PYGZsh{} I need to divide alpha since I\PYGZsq{}m making use of}
+    \PYG{c+c1}{\PYGZsh{} the two\PYGZhy{}side test}
+    \PYG{n}{alpha\PYGZus{}val} \PYG{o}{=} \PYG{l+m+mf}{0.05} \PYG{o}{/} \PYG{l+m+mi}{2}
+    \PYG{n}{std\PYGZus{}deviation} \PYG{o}{=} \PYG{l+m+mf}{0.7416}
+
+    \PYG{c+c1}{\PYGZsh{} Performing the t.ppf, in order to find c1 and c2}
+    \PYG{n}{c1} \PYG{o}{=} \PYG{n}{t}\PYG{o}{.}\PYG{n}{ppf}\PYG{p}{(}\PYG{n}{alpha\PYGZus{}val}\PYG{p}{,} \PYG{n}{n\PYGZus{}samples}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{,}
+               \PYG{n}{loc}\PYG{o}{=} \PYG{n}{mean}\PYG{p}{,} \PYG{n}{scale} \PYG{o}{=} \PYG{n}{std\PYGZus{}deviation}\PYG{p}{)}
+
+    \PYG{n}{c2} \PYG{o}{=} \PYG{n}{t}\PYG{o}{.}\PYG{n}{ppf}\PYG{p}{((}\PYG{l+m+mi}{1} \PYG{o}{\PYGZhy{}} \PYG{n}{alpha\PYGZus{}val}\PYG{p}{),} \PYG{n}{n\PYGZus{}samples}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{,}
+               \PYG{n}{loc}\PYG{o}{=} \PYG{n}{mean}\PYG{p}{,} \PYG{n}{scale} \PYG{o}{=} \PYG{n}{std\PYGZus{}deviation}\PYG{p}{)}
+
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}c1: lower\PYGZus{}cutoff\PYGZdq{}}\PYG{p}{,} \PYG{n}{c1}\PYG{p}{)}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}c2: upper\PYGZus{}cutoff\PYGZdq{}}\PYG{p}{,} \PYG{n}{c2}\PYG{p}{)}
+\end{Verbatim}

@@ -19,7 +19,6 @@
         # Calculate the eigenvecotrs and eigenvalues
         PCevals, PCevecs = np.linalg.eigh(cov_matrix)
         
-        
         # linalg.eigh returns the vectors and values 
         # in the wrong order.
         # Np.flip will reverse the order so it is correct and
@@ -37,8 +36,10 @@
     \caption{Values for the first 10 proportions of variance, and the corrosponding graph}
 \end{figure}
 
+\noindent The proportion and the figure shows the context between the principal components and the ammount of
+variance each iteration captures.
 
-
+\newpage
 
 \subsection{(b)}
 
@@ -70,6 +71,7 @@
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{Figures/Result_of_diatoms.JPG}
+    \includegraphics[width=0.75\textwidth]{Figures/Result_of_diatoms.JPG}
     \caption{Plotted diatom}
 \end{figure}
+

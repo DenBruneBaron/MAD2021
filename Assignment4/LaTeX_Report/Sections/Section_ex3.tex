@@ -1,0 +1,104 @@
+\section{Problem 3}
+\subsection{(a)}
+From comment 3.1 in the book\footnote{A first course in machine learning} by Rogers and Girolami
+I can see that I'm dealing with a conjugate pair. I have a beta distribution and a binomial liklihood.
+This means that when calculating the result, using the Baysian method, I can discard the denominator.
+Furthermore since my prior is a beta distributed and I as mentioned, is working with a conjugate pair
+my posterior must be beta distributed aswell.
+\\
+\begin{align*}
+    p(r|y_N) & \propto \Bigg[ \begin{pmatrix} N \\ y_N\end{pmatrix} r^{y_N}(1-r)^{N - y_N} \Bigg] \times \Bigg[ \frac{\Gamma (\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)} r^{\alpha - 1}(1 - r)^{\beta - 1}\Bigg] \\
+    & \\
+    & =\;\, \Bigg[ \begin{pmatrix} N \\ y_N\end{pmatrix} \frac{\Gamma (\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)} \Bigg] \times \Bigg[ r^{y_N} r^{\alpha - 1} (1-r)^{N - y_N} (1 - r)^{\beta - 1} \Bigg] \\
+    & \\
+    & \propto r^{y_N + \alpha - 1} (1 - r)^{N - y_N + \beta - 1} \\
+    & \\
+    & \propto r^{\delta - 1}(1 - r)^{\gamma - 1}
+\end{align*}
+
+The parameters for $\delta$ and $\gamma$ of this particular distribution is:
+\begin{align*}
+    & \delta = y_N + \alpha \\
+    & \gamma = N - y_N + \beta \\
+\end{align*}
+With the posterior beta density with the following general form, where K is a constant.
+
+\begin{align*}
+    & p(r) = K r^{\delta - 1}(1 - r)^{\beta - 1}
+\end{align*}
+
+In my case, the posterior will look as the following:
+
+\begin{align*}
+    & p(r|y_N) =  \frac{\Gamma (\delta + \gamma)}{\Gamma(\delta)\Gamma(\gamma)} r^{\delta - 1}(1 - r)^{\beta - 1}
+\end{align*}
+
+where $\frac{\Gamma (\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)}$ is now the constant.
+
+\subsection{(b)}
+In order to identify the prior i will make use of the beta density function
+
+\begin{align*}
+    \frac{\Gamma (\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)} r^{\alpha - 1}(1 - r)^{\beta - 1}
+\end{align*}
+To obtain $2r$ I will need to find some values for $\quad \alpha \quad \text{and} \quad \beta$
+$2r \text{can also be rewritten as} \quad 2*r^1$ so I will try to find the values for alpha and beta
+such that the fraction with the Gamma function will be equal to 2.
+Note that the "Gamma function" is the generalization of the factorial function.
+
+\begin{align*}
+    & \frac{\Gamma (2 + 1)}{\Gamma(2)\Gamma(1)} r^{2 - 1}(1 - r)^{1 - 1} \\
+    & \\
+    & \frac{\Gamma (3 - 1)!}{\Gamma(2 - 1)!\Gamma(1 - 1)!} r^{2 - 1}(1 - r)^{1 - 1} \\
+    & \\
+    & 2r^{1}(1 - r)^{0} \\
+    & 2r^{1} \cdot 1 \\
+    = & 2r 
+\end{align*}
+
+Following the same steps as in (a) and plugging in the new values for $\quad \alpha \quad \text{and} \quad \beta$
+I have the following.
+
+\begin{align*}
+    & r^{y_N} r^{2 - 1} (1-r)^{N - y_N} (1 - r)^{1 - 1} \\
+    & r^{y_N + 2 - 1} (1 - r)^{N - y_N + 1 - 1} 
+\end{align*}
+
+The parameters for $\delta$ and $\gamma$ of this particular distribution is:
+\begin{align*}
+    & \delta = y_N + 2 \\
+    & \gamma = N - y_N + 1 \\
+\end{align*}
+
+\subsection{(c)}
+I will not be showing all the calculations, since they are exactly the same steps as in (3b).
+\\
+\\
+To get $r^2$ I set the alpha value to 3, since $r^3-1 = r^2$ \\
+\\
+Then I have to finde a beta value that makes it possible for me to end up with $3r^2$. As show in (3b) this
+is where the fraction with the Gamma function will be used.
+I will set $\beta = 1$ 
+\begin{align*}
+    & \frac{\Gamma (3 + 1)}{\Gamma(2)\Gamma(1)} r^{3 - 1}(1 - r)^{1 - 1} \\
+    & \\
+    & \frac{\Gamma (4 - 1)!}{\Gamma(3 - 1)!\Gamma(1 - 1)!} r^{3 - 1}(1 - r)^{1 - 1} \\
+    & \\
+    & 3r^{2}(1 - r)^{0} \\
+    & 3r^{2} \cdot 1 \\
+    = & 3r^{2}
+\end{align*}
+
+Following the same steps as in (a) and plugging in the new values for $\quad \alpha \quad \text{and} \quad \beta$
+I have the following.
+
+\begin{align*}
+    & r^{y_N} r^{3 - 1} (1-r)^{N - y_N} (1 - r)^{1 - 1} \\
+    & r^{y_N + 3 - 1} (1 - r)^{N - y_N + 1 - 1} 
+\end{align*}
+
+The parameters for $\delta$ and $\gamma$ of this particular distribution is:
+\begin{align*}
+    & \delta = y_N + 3 \\
+    & \gamma = N - y_N + 1 \\
+\end{align*}

@@ -16,7 +16,6 @@
         \PYG{c+c1}{\PYGZsh{} Calculate the eigenvecotrs and eigenvalues}
         \PYG{n}{PCevals}\PYG{p}{,} \PYG{n}{PCevecs} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linalg}\PYG{o}{.}\PYG{n}{eigh}\PYG{p}{(}\PYG{n}{cov\PYGZus{}matrix}\PYG{p}{)}
 
-
         \PYG{c+c1}{\PYGZsh{} linalg.eigh returns the vectors and values}
         \PYG{c+c1}{\PYGZsh{} in the wrong order.}
         \PYG{c+c1}{\PYGZsh{} Np.flip will reverse the order so it is correct and}
