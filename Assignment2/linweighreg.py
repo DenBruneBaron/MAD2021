@@ -50,38 +50,6 @@ class LinearRegression():
 
         self.w = np.linalg.solve(b,c)
 
-        #return(self.w)
-
-
-
-#---------------------------------------------------
-    def fit_LOOCV(self, X, t, lamda, N):
-        # Create identity matrix
-        n = X.shape[0]
-        X = np.array(X).reshape((n, -1))
-        t = np.array(t).reshape((n, 1))
-        idm = np.identity(X.shape[1])
-        
-        # X^T * X 
-        xTx = np.dot(X.T, X)
-        print("xTx shape:", xTx.shape)
-
-        # X^T * t
-        xTt = np.dot(X.T, t)
-        print("xTt shape:", xTt.shape)
-
-        # N * Lamda * identity_matrix
-        INLamda = N * lamda * idm
-        print("Lambda shape",INLamda.shape)
-
-        fst_block = xTx + INLamda
-        print("fst shape:", fst_block.shape) 
-
-        #coef = np.dot(np.dot(np.linalg.inv(fst_block), X.T), t)
-        self.w = np.linalg.solve(fst_block,xTt)
-       
-       
-#--------------------------------------------------
 
     def predict(self, X):
         """

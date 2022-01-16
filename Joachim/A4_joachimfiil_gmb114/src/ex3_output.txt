@@ -1,0 +1,14 @@
+Shape of diatoms: (180, 780)
+Shape of diatoms_classes: (780,)
+Dimension: 180
+Sample size: 780
+Proportion of variance explained by the first 1 principal components: 0.7724084795075754
+Proportion of variance explained by the first 2 principal components: 0.9283068383686488
+Proportion of variance explained by the first 3 principal components: 0.9527338454202203
+Proportion of variance explained by the first 4 principal components: 0.9644100820848158
+Proportion of variance explained by the first 5 principal components: 0.9745341227537149
+Proportion of variance explained by the first 6 principal components: 0.9828894327448975
+Proportion of variance explained by the first 7 principal components: 0.9894341588202049
+Proportion of variance explained by the first 8 principal components: 0.991465238782597
+Proportion of variance explained by the first 9 principal components: 0.9931020513854178
+Proportion of variance explained by the first 10 principal components: 0.9944133616826103
