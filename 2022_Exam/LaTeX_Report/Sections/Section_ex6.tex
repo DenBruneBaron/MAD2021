@@ -1,0 +1,183 @@
+\section{Problem 6 - Classification \& Validation}
+\textbf{NOTE} that I've included the full python code in the appendix
+
+
+%--------------------------------------------------------------------------
+
+
+\subsection{a) - Implement random forest training}
+
+I've implemented the Random Forest Training using the existing library from \textbf{\textit{Sikitlearn}}, more specific
+the package: \textbf{sklearn.ensemble.RandomForestClassifier}.
+Below I've added the most notable part from my code in order to load the data. I'm reusing the "loaddata" function
+that's been handed out, though I've modified it slightly in line 12 in the code snippet.
+\begin{minted}[linenos, bgcolor = bg, breaklines]{python}
+# Modified the loaddata function to make the training features into 2d np.array, more specifically the 't value'
+def loaddata(filename):
+    """Load the balloon data set from filename and return t, X
+        t - N-dim. vector of target (temperature) values
+        X - N-dim. vector containing the inputs (lift) x for each data point
+    """
+    # Load data set from CSV file
+    Xt = np.loadtxt(filename, delimiter=',')
+    
+    # Split into data matrix and target vector
+    X = Xt[:,0] # Matrix
+    t = Xt[:,1:] # Vector
+    
+    return t, X
+
+# Loads the training data
+X_train, t_train = loaddata('D:\\Uddannelse\\Datalogi\\KU\\2_aar\\MAD\\MAD2021\\2022_Exam\\exam_data\\data\\accent-mfcc-data_shuffled_train.txt')
+
+# Loads the validation data
+X_validation, t_validation = loaddata('D:\\Uddannelse\\Datalogi\\KU\\2_aar\\MAD\\MAD2021\\2022_Exam\\exam_data\\data\\accent-mfcc-data_shuffled_validation.txt')
+
+\end{minted}
+
+To see how I've chosen to set up the Random Forest Classifier, training the algorithm using the
+it to predict - see the submitted code in section \ref{Code_setup}
+%--------------------------------------------------------------------------
+
+
+\subsection{b) - Finding the optimal set of random forest classifier parameters}
+I've chosae to use two extra packages in order to implement my Random Forest algorithm.
+It hasn't been specified that I'm not allowed to use other packages from the \textbf{Sklean} library
+so I assume that this is a possible solution.
+\\
+I've made use of \textbf{ParameterGrid} from the \textbf{\textit{sklearn.model\_selection}}
+and \textbf{accuracy\_score} from the \textbf{\textit{sklearn.metrics}}.
+\\
+I'm using ParameterGrid to generate a list of all the possible permutations of the specified parameters used
+for a given iteration to perform the optimized search.
+With each iteration the parameters and the resulting performance metrics are added to a list which can be
+sorted easily. I'm currently using the accuracy\_score as the first metric.
+
+see the submitted code in section \ref{Code_setup}
+
+
+
+%--------------------------------------------------------------------------
+
+
+
+\subsection{c) - My results}
+Looking at the results, it's possible to see that the performance of the algorithm increases
+when tree depth, number of features that's taken into consideration and the complexity of the criterion
+is also increased.
+However it comes with the cost of a more computational complexity aswell. The second listing in section 6.4 
+shows the terminal output from the optimization loop.
+I've appended a sorted print of the permutated parameters in the appendix. 
+
+
+
+%--------------------------------------------------------------------------
+
+
+
+\subsection{Code for a) \& b)}
+\label{Code_setup}
+testestestest
+
+\begin{minted}[linenos, bgcolor = bg, breaklines]{python}
+# Adding the parameters to test given in the exam question. Using these to find the optimal set of random forest classifier parameters.
+random_f_parameters = {
+    'criterion'         : ['gini', 'entropy'],
+    'max_tree_depth'    : [2,5,6,10,15],
+    'max_features'      : ['sqrt', 'log2']
+    }
+
+# Empty array for the result metrics
+res = np.empty((0,3)) 
+
+# Looping through the chosen(given) parameters and setting up the Random forest classifier each time.
+for params in list(ParameterGrid(random_f_parameters)):
+    clf = RandomForestClassifier(
+        criterion    = params['criterion'],
+        max_depth    = params['max_tree_depth'],
+        max_features = params['max_features'])
+
+    # Training using the created classifier with the given parameters.
+    clf.fit(X_train, t_train)
+
+    # number of correctly classified validation samples
+    t_prediction = clf.predict(X_validation)
+    acc_score = accuracy_score(t_validation, t_prediction)
+
+    # probability associated with classification
+    t_probability = clf.predict_proba(X_validation)
+    probability_score = np.mean([t_probability[int(t_val)]
+                            for (t_probability, t_val)
+                            in zip(t_probability, t_validation)])
+
+    print("Accuracy score: %.2f"
+        %acc_score)
+    print("Average probability assigned to correct classes: %.2f"
+        %probability_score)
+
+    # print the parameters if new ones are more optimal than previously tried ones.
+    if len(res) > 0 and (acc_score > res[-1,1]
+                            or (acc_score == res[-1,1]
+                                and probability_score > res[-1,2])):
+        print(params)
+
+    # accumulate results
+    res = np.append(res, np.array([[params, acc_score, probability_score]]), axis=0)
+    # sort the results in ascending order
+    res = res[np.lexsort((res[:,1], res[:,2]))] 
+\end{minted}
+
+
+\begin{figure}[H]
+\begin{verbatim}
+Accuracy score: 0.48
+Average probability assigned to correct classes: 0.36
+Accuracy score: 0.66
+Average probability assigned to correct classes: 0.48
+{'criterion': 'gini', 'max_features': 'sqrt', 'max_tree_depth': 5}
+Accuracy score: 0.73
+Average probability assigned to correct classes: 0.51
+{'criterion': 'gini', 'max_features': 'sqrt', 'max_tree_depth': 6}
+Accuracy score: 0.77
+Average probability assigned to correct classes: 0.56
+{'criterion': 'gini', 'max_features': 'sqrt', 'max_tree_depth': 10}
+Accuracy score: 0.77
+Average probability assigned to correct classes: 0.56
+{'criterion': 'gini', 'max_features': 'sqrt', 'max_tree_depth': 15}
+Accuracy score: 0.48
+Average probability assigned to correct classes: 0.36
+Accuracy score: 0.69
+Average probability assigned to correct classes: 0.48
+Accuracy score: 0.71
+Average probability assigned to correct classes: 0.51
+Accuracy score: 0.82
+Average probability assigned to correct classes: 0.56
+{'criterion': 'gini', 'max_features': 'log2', 'max_tree_depth': 10}
+Accuracy score: 0.79
+Average probability assigned to correct classes: 0.57
+{'criterion': 'gini', 'max_features': 'log2', 'max_tree_depth': 15}
+Accuracy score: 0.52
+Average probability assigned to correct classes: 0.37
+Accuracy score: 0.73
+Average probability assigned to correct classes: 0.51
+Accuracy score: 0.74
+Average probability assigned to correct classes: 0.54
+Accuracy score: 0.81
+Average probability assigned to correct classes: 0.57
+{'criterion': 'entropy', 'max_features': 'sqrt', 'max_tree_depth': 10}
+Accuracy score: 0.81
+Average probability assigned to correct classes: 0.58
+{'criterion': 'entropy', 'max_features': 'sqrt', 'max_tree_depth': 15}
+Accuracy score: 0.51
+Average probability assigned to correct classes: 0.38
+Accuracy score: 0.75
+Average probability assigned to correct classes: 0.51
+Accuracy score: 0.78
+Average probability assigned to correct classes: 0.54
+Accuracy score: 0.81
+Average probability assigned to correct classes: 0.58
+Accuracy score: 0.78
+Average probability assigned to correct classes: 0.57
+\end{verbatim}
+\caption{Caption of figure here}
+\end{figure}

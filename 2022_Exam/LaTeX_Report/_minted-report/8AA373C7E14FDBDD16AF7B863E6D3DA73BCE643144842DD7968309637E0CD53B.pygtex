@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{x}{\PYGZsh{} Modified the loaddata function to make the training features into 2d np.array, more specifically the \PYGZsq{}t value\PYGZsq{}}
+\PYG{x}{def loaddata(filename):}
+\PYG{x}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}Load the balloon data set from filename and return t, X}
+\PYG{x}{        t \PYGZhy{} N\PYGZhy{}dim. vector of target (temperature) values}
+\PYG{x}{        X \PYGZhy{} N\PYGZhy{}dim. vector containing the inputs (lift) x for each data point}
+\PYG{x}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{x}{    \PYGZsh{} Load data set from CSV file}
+\PYG{x}{    Xt = np.loadtxt(filename, delimiter=\PYGZsq{},\PYGZsq{})}
+
+\PYG{x}{    \PYGZsh{} Split into data matrix and target vector}
+\PYG{x}{    X = Xt[:,0] \PYGZsh{} Matrix}
+\PYG{x}{    t = Xt[:,1:] \PYGZsh{} Vector}
+
+\PYG{x}{    return t, X}
+
+\PYG{x}{\PYGZsh{} Loads the training data}
+\PYG{x}{X\PYGZus{}train, t\PYGZus{}train = loaddata(\PYGZsq{}D:\PYGZbs{}\PYGZbs{}Uddannelse\PYGZbs{}\PYGZbs{}Datalogi\PYGZbs{}\PYGZbs{}KU\PYGZbs{}\PYGZbs{}2\PYGZus{}aar\PYGZbs{}\PYGZbs{}MAD\PYGZbs{}\PYGZbs{}MAD2021\PYGZbs{}\PYGZbs{}2022\PYGZus{}Exam\PYGZbs{}\PYGZbs{}exam\PYGZus{}data\PYGZbs{}\PYGZbs{}data\PYGZbs{}\PYGZbs{}accent\PYGZhy{}mfcc\PYGZhy{}data\PYGZus{}shuffled\PYGZus{}train.txt\PYGZsq{})}
+
+\PYG{x}{\PYGZsh{} Loads the validation data}
+\PYG{x}{X\PYGZus{}validation, t\PYGZus{}validation = loaddata(\PYGZsq{}D:\PYGZbs{}\PYGZbs{}Uddannelse\PYGZbs{}\PYGZbs{}Datalogi\PYGZbs{}\PYGZbs{}KU\PYGZbs{}\PYGZbs{}2\PYGZus{}aar\PYGZbs{}\PYGZbs{}MAD\PYGZbs{}\PYGZbs{}MAD2021\PYGZbs{}\PYGZbs{}2022\PYGZus{}Exam\PYGZbs{}\PYGZbs{}exam\PYGZus{}data\PYGZbs{}\PYGZbs{}data\PYGZbs{}\PYGZbs{}accent\PYGZhy{}mfcc\PYGZhy{}data\PYGZus{}shuffled\PYGZus{}validation.txt\PYGZsq{})}
+\end{Verbatim}

@@ -1,0 +1,86 @@
+\section{Problem 3 - Principal Component Analysis}
+\subsection{1) - Mean point of the data}
+Step one is to calculate the mean point of the data with respect to both x and y
+
+$$\bar{x} = \frac{1}{8} (0.6 + 0.5 + 1.1 + (-0.5) + 0.8 + 0.2 + (-0.1) + 1.0) = 0.4500$$
+
+$$\bar{y} = \frac{1}{8} (1.1 + 1.0 + 2.0 + 0.2 + (-0.1) + (-0.1) + (-1.5) + 2.5) = 0.6375$$
+
+Step two is to normalize the dataset. This is done by taking each original point
+and subtract the mean.
+$p - [\bar{x}, \bar{y}]$
+
+Normalizing each point
+\begin{align}
+    &p1 = (0.6 , 1.1) - [0.4500, 0.6375] \quad = \quad [0.1500, 0.4625] \\
+    &p2 = (0.5 , 1.0) - [0.4500, 0.6375] \quad = \quad [0.0500, 0.3625] \\
+    &p3 = (1.1 , 2.0) - [0.4500, 0.6375] \quad = \quad [0.6500, 1.3625] \\
+    &p4 = (-0.5 , 0.2) - [0.4500, 0.6375] \quad = \quad [-0.9500, -0.4375] \\
+    &p5 = (0.8, -0.1) - [0.4500, 0.6375] \quad = \quad [0.3500, -0.7375] \\
+    &p6 = (0.2 , -0.1) - [0.4500, 0.6375] \quad = \quad [-0.2500, -0.7375] \\
+    &p7 = (-0.1 , -1.5) - [0.4500, 0.6375] \quad = \quad [-0.5500, -2.1375] \\
+    &p8 = (1.0, 2.5) - [0.4500, 0.6375] \quad = \quad [0.5500, 1.8625] 
+\end{align}
+
+Step three is to calculate the covariances for XX, XY and YY using the normalized values for p1-p8
+
+
+\begin{equation}
+    \begin{split}
+        cov(xx) = & \frac{1}{8} \Big(0.15^2 + 0.05^2 + 0.65^2 + (-0.95)^2 \\
+                  & + (-0.25)^2 + (-0.55)^2 + 0.55^2 \Big) = 0.2675
+    \end{split}
+\end{equation}
+
+\begin{equation}
+    \begin{split}
+        cov(yy) = & \frac{1}{8} \Big(0.4625^2 + 0.3625^2 + 1.3625^2 + (-0.4375)^2 + \\
+                  &(-0.7375)^2 + (-0.7375)^2 + (-2.1375)^2 + 1.8625^2 \Big) = 1.439843750
+    \end{split}
+\end{equation}
+
+\begin{equation}
+    \begin{split}
+        cov(xy) = & \frac{1}{8} \Big( (0.15\cdot 0.4625 + 0.05 \cdot 0.3625 + 0.65 \cdot  1.3625 + ((-0.95)\cdot (-0.4375))\\
+                  &  + 0.35 \cdot (-0.7375) + ((-0.25)\cdot (-0.7375)) + ((-0.55)\cdot (-2.1375))\\
+                  &  + 0.55 \cdot 1.8625) \Big) = 0.439375
+    \end{split}
+\end{equation}
+
+having done the three calucaltions I can now form the covariance matrix inserting the calculated
+values into their respectable place:
+$$
+cov = \begin{pmatrix}
+    xx & xy \\
+    xy & yy
+ \end{pmatrix}
+ = 
+$$
+$$ cov = \begin{pmatrix}
+            0.2675 & 0.439375 \\
+            0.439375 & 1.439843750
+         \end{pmatrix}$$
+
+
+\subsection{2) - Two eigenvalues}
+I order to find the eigenvalues and the eigenvectors i need to solve \textbf{\textit{Characteristic equation}} of the
+covariance matrix.
+The Characteristic equation is denoted as: 
+$$det(A - \lambda I) = 0$$
+
+To calculate the determinant you calculate the following:
+$$
+determinant = \begin{pmatrix}
+                a & b \\
+                c & c
+              \end{pmatrix}
+= ad - bc
+$$
+So in my case in order to calculate the determinant I have
+$$ cov = \begin{pmatrix}
+    0.2675 - \lambda & 0.439375 \\
+    0.439375 & 1.439843750 - \lambda
+ \end{pmatrix}$$
+
+$$det(cov) = ((0.2675 - \lambda) \cdot (1.439843750 - \lambda)) - (0.439375 \cdot 0.439375) = $$
+\subsection{3) - Two eigenvectors}

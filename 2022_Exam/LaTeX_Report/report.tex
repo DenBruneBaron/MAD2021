@@ -1,0 +1,122 @@
+\documentclass{article}
+\usepackage[english, danish]{babel}
+\usepackage[utf8]{inputenc}
+
+%Make Code look nice%
+\usepackage[newfloat]{minted}
+\usepackage{tcolorbox}
+\usepackage{etoolbox}
+\definecolor{bg}{rgb}{0.96,0.96,0.96}
+
+\usepackage{listings}
+\usepackage{datetime}
+\usepackage{comment}
+\usepackage{xcolor}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{subfig}
+\usepackage{varwidth}
+\usepackage{tabularx}
+\usepackage{ltablex}
+\usepackage{float}
+\usepackage[hidelinks]{hyperref}
+
+%math%
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{fourier}
+
+%Subfiles%
+\usepackage{lastpage}
+\usepackage{subfiles}
+
+\title{Modelling and Analysis of Data}
+\author{Exam no. 39}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Exam no. 39 \\ January 17th - 25th}
+\lhead{Modelling and Analysis of Data \\ Exam 2022}
+
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+\thispagestyle{empty}
+\end{titlepage}
+
+\rfoot{Side \thepage \hspace{1pt} of \pageref{mylastpage}}
+\thispagestyle{empty}
+\setcounter{page}{0}
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+\newpage 
+
+%-----------------
+% OPGAVE 1: 
+%-----------------
+%\include{Sections/Section_A.tex}
+\subfile{Sections/Section_ex1.tex}
+
+%-----------------
+% OPGAVE 2: 
+%-----------------
+\subfile{Sections/Section_ex2.tex}
+
+%-----------------
+% OPGAVE 3: 
+%-----------------
+\subfile{Sections/Section_ex3.tex}
+
+%-----------------
+% OPGAVE 4: 
+%-----------------
+\subfile{Sections/Section_ex4.tex}
+
+%-----------------
+% OPGAVE 5: 
+%-----------------
+\subfile{Sections/Section_ex5.tex}
+
+%-----------------
+% OPGAVE 6: 
+%-----------------
+\subfile{Sections/Section_ex6.tex}
+
+%-----------------
+% OPGAVE 7: 
+%-----------------
+\subfile{Sections/Section_ex7.tex}
+
+\label{mylastpage}
+\newpage
+\thispagestyle{empty}
+
+%-----------------
+% APPENDIX A: 
+%-----------------
+\subfile{Sections/Appendix_a.tex}
+%-----------------
+% APPENDIX B: 
+%-----------------
+\subfile{Sections/Appendix_b.tex}
+%-----------------
+% APPENDIX C: 
+%-----------------
+\subfile{Sections/Appendix_q6.tex}
+
+%-----------------
+% APPENDIX D: 
+%-----------------
+\subfile{Sections/Appendix_q6_c.tex}
+
+%-----------------
+% Bibliografi
+%-----------------
+\end{document}
