@@ -76,11 +76,30 @@ determinant = \begin{pmatrix}
               \end{pmatrix}
 = ad - bc
 $$
-So in my case in order to calculate the determinant I have
-$$ cov = \begin{pmatrix}
+Solving the system equation that I get from uising the Characteristics equation on the covariance matrix
+i get the following eigenvalues.
+$$\begin{pmatrix}
     0.2675 - \lambda & 0.439375 \\
     0.439375 & 1.439843750 - \lambda
- \end{pmatrix}$$
+\end{pmatrix}
+= 0
+$$
+First I get the equation by calulating the determinant
+$$det(cov) \rightarrow ((0.2675 - \lambda) \cdot (1.439843750 - \lambda)) - (0.439375 \cdot 0.439375) $$
+Then setting the equation equal to zero and solving it will give me the two values for $\lambda$ which is the
+eigenvalues.
+$$((0.2675 - \lambda) \cdot (1.439843750 - \lambda)) - (0.439375 \cdot 0.439375) = 0$$
+$$eigenvalue_1 = 0.1211093468 \quad \quad eigenvalue_2 = 1.586234403$$
 
-$$det(cov) = ((0.2675 - \lambda) \cdot (1.439843750 - \lambda)) - (0.439375 \cdot 0.439375) = $$
+
 \subsection{3) - Two eigenvectors}
+I order to find the eigenvectors I use the definition of an eigenvector $A\bar{\textbf{x}} = \lambda\bar{\textbf{x}}$
+and solve this this equation.
+$$cov \cdot \bar{x} = \lambda \cdot \bar{x}$$
+
+I'm going to do the calculations in Maple since I'm dealing with odd numbers. I also going to
+reduce some of the decimals by rounding off just for readabilitys sake.
+
+$$eigenvector_1 = [-0.9487, -0.3161] \quad \quad eigenvector_2 = [0.3161, -0.9487]$$
+
+\noindent note that signs of the eigenvector can be different. e.g. $eigenvector_1$ could be $[0.9487, 0.3161][]$

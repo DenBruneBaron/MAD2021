@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.11)  17 JAN 2022 20:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.11)  20 JAN 2022 15:28
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/Uddannelse/Datalogi/KU/2_aar/MAD/MAD2021/2022_Exam/LaTeX_Report/report.tex
-(d:/Uddannelse/Datalogi/KU/2_aar/MAD/MAD2021/2022_Exam/LaTeX_Report/report.tex
+**d:/Uddannelse/Datalogi/KU/2_aar/MAD/MAD2021/2022_Exam/Exam_REPLACEMENT/LaTeX_Report/report.tex
+(d:/Uddannelse/Datalogi/KU/2_aar/MAD/MAD2021/2022_Exam/Exam_REPLACEMENT/LaTeX_Report/report.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2021-11-22> (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -1013,7 +1013,7 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 \openout3 = `report.pyg'.
 
  (./_minted-report/884A6F2346D979774FE1CC3959C245457C2E7F49E087B8E8E8DF5244CE287E39.pygtex)
-<example-image-a.pdf, id=149, 321.2pt x 240.9pt>
+<example-image-a.pdf, id=164, 321.2pt x 240.9pt>
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
 Package pdftex.def Info: example-image-a.pdf  used on input line 11.
@@ -1040,7 +1040,45 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
 
-[2]) (./Sections/Section_ex4.tex) (./Sections/Section_ex5.tex) (./Sections/Section_ex6.tex
+[2])
+Overfull \hbox (42.48189pt too wide) in paragraph at lines 105--76
+\T1/futs/m/n/10 note that signs of the ei-gen-vector can be dif-fe-rent. e.g. $\FML/futmi/m/it/10 eigenvector[]$ \T1/futs/m/n/10 could be $[0\FML/futmi/m/it/10 :\T1/futs/m/n/10 9487\FML/futmi/m/it/10 ; \T1/futs/m/n/10 0\FML/futmi/m/it/10 :\T1/futs/m/n/10 3161][]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--76
+
+ []
+
+(./Sections/Section_ex4.tex
+<Figures/Q4_a_galaxiesPlot.png, id=199, 380.42125pt x 279.0425pt>
+File: Figures/Q4_a_galaxiesPlot.png Graphic file (type png)
+<use Figures/Q4_a_galaxiesPlot.png>
+Package pdftex.def Info: Figures/Q4_a_galaxiesPlot.png  used on input line 9.
+(pdftex.def)             Requested size: 258.75pt x 189.80173pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46002pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46002pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
+
+[3]
+<Figures/Q4_b_wMatrix_plot.png, id=206, 380.42125pt x 279.0425pt>
+File: Figures/Q4_b_wMatrix_plot.png Graphic file (type png)
+<use Figures/Q4_b_wMatrix_plot.png>
+Package pdftex.def Info: Figures/Q4_b_wMatrix_plot.png  used on input line 19.
+(pdftex.def)             Requested size: 258.75pt x 189.80173pt.
+) (./Sections/Section_ex5.tex) (./Sections/Section_ex6.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46002pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46002pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
+
+[4 <./Figures/Q4_a_galaxiesPlot.png> <./Figures/Q4_b_wMatrix_plot.png>]
 \openout3 = `report.pyg'.
 
  (./_minted-report/8AA373C7E14FDBDD16AF7B863E6D3DA77C2E7F49E087B8E8E8DF5244CE287E39.pygtex
@@ -1058,29 +1096,8 @@ Overfull \hbox (369.57697pt too wide) in paragraph at lines 21--21
  []
 
 )
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.46002pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.46002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
-
-[3]
 Overfull \hbox (12.58437pt too wide) in paragraph at lines 44--55
 \T1/futs/m/n/10 I've ma-de use of \T1/futs/b/n/10 Pa-ra-me-ter-Grid \T1/futs/m/n/10 from the \T1/futs/b/it/10 sk-learn.model_selection \T1/futs/m/n/10 and \T1/futs/b/n/10 ac-cu-ra-cy_score
- []
-
-\openout3 = `report.pyg'.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.46002pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.46002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
-
-[4] (./_minted-report/D2CF65323B952BE46A13AF6F829495CB7C2E7F49E087B8E8E8DF5244CE287E39.pygtex)
-Underfull \vbox (badness 10000) detected at line 128
  []
 
 
@@ -1091,6 +1108,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
 
 [5]
+\openout3 = `report.pyg'.
+
+ (./_minted-report/D2CF65323B952BE46A13AF6F829495CB7C2E7F49E087B8E8E8DF5244CE287E39.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46002pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46002pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
+
+[6]
 Overfull \hbox (1.4154pt too wide) in paragraph at lines 137--137
 []\T1/cmtt/m/n/10 {\TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 criterion\TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 : \TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 gini\TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 , \TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 max_features\TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 : \TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 sqrt\TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 , \TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 max_tree_depth\TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 : 5}[] 
  []
@@ -1138,7 +1166,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
 
-[6]
+[7]
 Overfull \vbox (54.3313pt too high) has occurred while \output is active []
 
 
@@ -1149,7 +1177,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
 
-[7] (./Sections/Section_ex7.tex)
+[8] (./Sections/Section_ex7.tex
+\openout3 = `report.pyg'.
+
+ (./_minted-report/EA7D24F4AEE89D1AB3894A5B9E1B51787C2E7F49E087B8E8E8DF5244CE287E39.pygtex))
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 22.46002pt, for example:
@@ -1157,10 +1188,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
 
-[8] (./Sections/Appendix_a.tex
+[9] (./Sections/Appendix_a.tex
 \openout3 = `report.pyg'.
 
- (./_minted-report/F8D4093EBCF5FD08222BC67B56AF5B8E7C2E7F49E087B8E8E8DF5244CE287E39.pygtex) [9]) (./Sections/Appendix_b.tex
+ (./_minted-report/F8D4093EBCF5FD08222BC67B56AF5B8E7C2E7F49E087B8E8E8DF5244CE287E39.pygtex) [10]) (./Sections/Appendix_b.tex
 \openout3 = `report.pyg'.
 
  (./_minted-report/F8D4093EBCF5FD08222BC67B56AF5B8E7C2E7F49E087B8E8E8DF5244CE287E39.pygtex)
@@ -1171,7 +1202,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
 
-[10]) (./Sections/Appendix_q6.tex
+[11]) (./Sections/Appendix_q6.tex
 \openout3 = `report.pyg'.
 
  (./_minted-report/F90E9551111763D3266AE9DE01337C5B7C2E7F49E087B8E8E8DF5244CE287E39.pygtex
@@ -1195,7 +1226,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
 
-[11]
+[12]
 Underfull \vbox (badness 10000) detected at line 97
  []
 
@@ -1206,7 +1237,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
 
-[12]
+[13]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 22.46002pt, for example:
@@ -1214,7 +1245,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
 
-[13]) (./Sections/Appendix_q6_c.tex
+[14]) (./Sections/Appendix_q6_c.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
 
  []
@@ -1326,27 +1357,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
 
-[14]) 
+[15]) 
 AED: lastpage setting LastPage
 (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 1E736CD6B1F08604811521373F4FA7B4;3999.
+(rerunfilecheck)             Checksum: 9235D5979EED3B00A3AF722D35CD24ED;4267.
 runsystem(del report.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 29262 strings out of 478353
- 554615 string characters out of 5839074
- 891229 words of memory out of 5000000
- 46715 multiletter control sequences out of 15000+600000
- 486813 words of font info for 116 fonts, out of 8000000 for 9000
+ 29296 strings out of 478353
+ 555811 string characters out of 5839074
+ 891302 words of memory out of 5000000
+ 46735 multiletter control sequences out of 15000+600000
+ 495013 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,19n,133p,1103b,749s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,19n,133p,1120b,749s stack positions out of 5000i,500n,10000p,200000b,80000s
 {g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/lm/lmss17.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on report.pdf (16 pages, 182048 bytes).
+Output written on report.pdf (17 pages, 207315 bytes).
 PDF statistics:
- 319 PDF objects out of 1000 (max. 8388607)
- 274 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 500000)
- 226 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 347 PDF objects out of 1000 (max. 8388607)
+ 297 compressed objects within 3 object streams
+ 62 named destinations out of 1000 (max. 500000)
+ 260 words of extra memory for PDF output out of 10000 (max. 10000000)
 

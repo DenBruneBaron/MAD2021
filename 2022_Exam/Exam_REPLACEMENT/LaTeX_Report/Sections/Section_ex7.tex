@@ -1,0 +1,26 @@
+\section{Problem 7 - K-means Clustering \& Principal Component Analysis}
+
+% a) Provide a code snippet in the report showing how you perform the normalization
+\subsection {a)}
+I've decided to make my own function to normalize my data. It normalizes the input
+value x by subtracting the mean and dividion by the standard deviation.
+\begin{minted}[linenos, bgcolor = bg, breaklines]{python}
+    def normalizeData(x):
+    '''
+    Normalizes the input using mean and the standard deviation.
+    Normalization is done on all the columns in the 2d numpy-array 'x'
+
+    Returns the normalized 'x'
+    '''
+    return (x - np.mean(x, axis=0)) / np.std(x, axis=0)
+\end{minted}
+
+\subsection {b)}
+% b) provide a code snippet in the report showing your K-means implementation
+
+% c) include the number of samples in each cluster in the report
+
+% d) provide a code snippet and explanation of what you did in the report
+
+% e) include a code snippet, the plot and your reflections on the results in the report.
+

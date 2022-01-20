@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k}{def} \PYG{n+nf}{normalizeData}\PYG{p}{(}\PYG{n}{x}\PYG{p}{):}
+    \PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{    Normalizes the input using mean and the standard deviation.}
+\PYG{l+s+sd}{    Normalization is done on all the columns in the 2d numpy\PYGZhy{}array \PYGZsq{}x\PYGZsq{}}
+
+\PYG{l+s+sd}{    Returns the normalized \PYGZsq{}x\PYGZsq{}}
+\PYG{l+s+sd}{    \PYGZsq{}\PYGZsq{}\PYGZsq{}}
+    \PYG{k}{return} \PYG{p}{(}\PYG{n}{x} \PYG{o}{\PYGZhy{}} \PYG{n}{np}\PYG{o}{.}\PYG{n}{mean}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{axis}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{))} \PYG{o}{/} \PYG{n}{np}\PYG{o}{.}\PYG{n}{std}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{axis}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)}
+\end{Verbatim}
