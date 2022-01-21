@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.11)  20 JAN 2022 20:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.11)  21 JAN 2022 22:02
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -367,24 +367,185 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@temp=\box69
 \tcb@temp=\box70
 \tcb@temp=\box71
+) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/pgf/math/pgfmath.sty (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+ (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen198
+\pgffor@skip=\dimen199
+\pgffor@stack=\toks33
+\pgffor@toks=\toks34
+)) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count305
+\pgfplotmarksize=\dimen256
+)
+\tikz@lastx=\dimen257
+\tikz@lasty=\dimen258
+\tikz@lastxsaved=\dimen259
+\tikz@lastysaved=\dimen260
+\tikz@lastmovetox=\dimen261
+\tikz@lastmovetoy=\dimen262
+\tikzleveldistance=\dimen263
+\tikzsiblingdistance=\dimen264
+\tikz@figbox=\box72
+\tikz@figbox@bg=\box73
+\tikz@tempbox=\box74
+\tikz@tempbox@bg=\box75
+\tikztreelevel=\count306
+\tikznumberofchildren=\count307
+\tikznumberofcurrentchild=\count308
+\tikz@fig@count=\count309
+ (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count310
+\pgfmatrixcurrentcolumn=\count311
+\pgf@matrix@numberofcolumns=\count312
+)
+\tikz@expandcount=\count313
+ (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/forest/forest.sty
+Package: forest 2017/07/14 v2.1.5 Drawing (linguistic) trees
+ (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.callouts.code.tex (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.code.tex)) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodepartlowerbox=\box76
+\pgfnodeparttwobox=\box77
+\pgfnodepartthreebox=\box78
+\pgfnodepartfourbox=\box79
+\pgfnodeparttwentybox=\box80
+\pgfnodepartnineteenbox=\box81
+\pgfnodeparteighteenbox=\box82
+\pgfnodepartseventeenbox=\box83
+\pgfnodepartsixteenbox=\box84
+\pgfnodepartfifteenbox=\box85
+\pgfnodepartfourteenbox=\box86
+\pgfnodepartthirteenbox=\box87
+\pgfnodeparttwelvebox=\box88
+\pgfnodepartelevenbox=\box89
+\pgfnodeparttenbox=\box90
+\pgfnodepartninebox=\box91
+\pgfnodeparteightbox=\box92
+\pgfnodepartsevenbox=\box93
+\pgfnodepartsixbox=\box94
+\pgfnodepartfivebox=\box95
+))) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.code.tex (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
+\pgf@intersect@solutions=\count314
+) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks35
+\pgfopts@list@add@b@toks=\toks36
+) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/elocalloc/elocalloc.sty
+Package: elocalloc 2016/12/15 v0.03 local allocation for LaTeX 2015+ (DPC)
+) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-11-22 L3 programming layer (loader) 
+ (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count315
+\l__pdf_internal_box=\box96
+))
+Package: xparse 2021-11-12 L3 Experimental document command parser
+) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/inlinedef/inlinedef.sty
+Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
+\ID@toks=\toks37
+\ID@count=\count316
+)
+\ID@usercommands=\toks38
+\safeloop@depth=\count317
+\safeRKloop@depth=\count318
+\forest@temp@dimen=\dimen265
+\forest@temp@count=\count319
+\forest@n=\count320
+\forest@temp@global@count=\count321
+\forest@temp@toks=\toks39
+\forest@temparray@M=\count322
+\forest@temparray@N=\count323
+\forest@global@temparray@M=\count324
+\forest@global@temparray@N=\count325
+\forest@isnum@count=\count326
+\forest@isdim@nonintpart=\count327
+\forest@isdim@dimen=\dimen266
+\forest@sort@m=\count328
+\forest@sort@k=\count329
+\forest@sort@p=\count330
+\bracket@content=\toks40
+\bracket@afterthought=\toks41
+\forest@node@maxid=\count331
+\forest@process@left@M=\count332
+\forest@process@left@N=\count333
+\forest@process@right@M=\count334
+\forest@process@right@N=\count335
+\forest@process@saved@M=\count336
+\forest@process@saved@N=\count337
+\forest@process@result@M=\count338
+\forest@process@result@N=\count339
+\forest@process@n=\count340
+\forest@nodewalk@branch@toks=\toks42
+\forest@nodewalk@shortsteps@resolution=\toks43
+\forest@do@dynamics=\toks44
+\forest@box=\box97
+\forest@xg=\dimen267
+\forest@yg=\dimen268
+\forest@xs=\dimen269
+\forest@ys=\dimen270
+\forest@pi@toks=\toks45
+\forest@segment@toks=\toks46
+\forest@PIi@toks=\toks47
+\forest@PIii@toks=\toks48
+\forest@copy@in=\read7
+\forest@copy@out=\write6
+\forest@externalize@max@outer@n=\count341
+\forest@externalize@inner@n=\count342
+) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowinset=\dimen271
+\pgfarrowlength=\dimen272
+\pgfarrowwidth=\dimen273
+\pgfarrowlinewidth=\dimen274
 ) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count305
-\lst@gtempboxa=\box72
-\lst@token=\toks33
-\lst@length=\count306
-\lst@currlwidth=\dimen198
-\lst@column=\count307
-\lst@pos=\count308
-\lst@lostspace=\dimen199
-\lst@width=\dimen256
-\lst@newlines=\count309
-\lst@lineno=\count310
-\lst@maxwidth=\dimen257
+\lst@mode=\count343
+\lst@gtempboxa=\box98
+\lst@token=\toks49
+\lst@length=\count344
+\lst@currlwidth=\dimen275
+\lst@column=\count345
+\lst@pos=\count346
+\lst@lostspace=\dimen276
+\lst@width=\dimen277
+\lst@newlines=\count347
+\lst@lineno=\count348
+\lst@maxwidth=\dimen278
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count311
-\lst@skipnumbers=\count312
-\lst@framebox=\box73
+\c@lstnumber=\count349
+\lst@skipnumbers=\count350
+\lst@framebox=\box99
 ) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
@@ -396,79 +557,78 @@ Package: fmtcount 2020/01/30 v3.07
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/xkeyval/xkeyval.tex (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks34
-\XKV@tempa@toks=\toks35
+\XKV@toks=\toks50
+\XKV@tempa@toks=\toks51
 )
-\XKV@depth=\count313
+\XKV@depth=\count351
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/fmtcount/fcprefix.sty
 Package: fcprefix 2012/09/28
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
 Package: fcnumparser 2017/06/15
-\fc@digit@counter=\count314
-))
-(g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+\fc@digit@counter=\count352
+)) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks36
-\ex@=\dimen258
+\@emptytoks=\toks52
+\ex@=\dimen279
 )
-\c@padzeroesN=\count315
-\fc@tmpcatcode=\count316
+\c@padzeroesN=\count353
+\fc@tmpcatcode=\count354
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/fmtcount/fc-english.def
 File: fc-english.def 2016/01/12
 )
-\@DT@modctr=\count317
-\@ordinalctr=\count318
-\@orgargctr=\count319
-\@strctr=\count320
-\@tmpstrctr=\count321
-\@DT@loopN=\count322
-\@DT@X=\count323
+\@DT@modctr=\count355
+\@ordinalctr=\count356
+\@orgargctr=\count357
+\@strctr=\count358
+\@tmpstrctr=\count359
+\@DT@loopN=\count360
+\@DT@X=\count361
 ) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/datetime/datetime-defaults.sty
 Package: datetime-defaults 2013/09/10
 )
-\@day=\count324
-\@month=\count325
-\@year=\count326
-\c@HOUR=\count327
-\c@HOURXII=\count328
-\c@MINUTE=\count329
-\c@TOHOUR=\count330
-\c@TOMINUTE=\count331
-\c@SECOND=\count332
-\currenthour=\count333
-\currentminute=\count334
-\currentsecond=\count335
+\@day=\count362
+\@month=\count363
+\@year=\count364
+\c@HOUR=\count365
+\c@HOURXII=\count366
+\c@MINUTE=\count367
+\c@TOHOUR=\count368
+\c@TOMINUTE=\count369
+\c@SECOND=\count370
+\currenthour=\count371
+\currentminute=\count372
+\currentsecond=\count373
 Package datetime Info: No datetime.cfg file found, using default settings on input line 308.
-\@dtctr=\count336
-\dayofyear=\count337
-\dayofweek=\count338
+\@dtctr=\count374
+\dayofyear=\count375
+\dayofweek=\count376
 LaTeX Info: Redefining \today on input line 736.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/datetime/dt-danish.def
 File: dt-danish.def 2013/09/10
 LaTeX Info: Redefining \datedanish on input line 64.
 )
-\dt@a=\toks37
-\dt@b=\toks38
+\dt@a=\toks53
+\dt@b=\toks54
 ) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/comment/comment.sty
-\CommentStream=\write6
+\CommentStream=\write7
  Excluding comment 'comment') (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
-\@enLab=\toks39
+\@enLab=\toks55
 ) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip54
-\enit@outerparindent=\dimen259
-\enit@toks=\toks40
-\enit@inbox=\box74
-\enit@count@id=\count339
-\enitdp@description=\count340
+\enit@outerparindent=\dimen280
+\enit@toks=\toks56
+\enit@inbox=\box100
+\enit@count@id=\count377
+\enitdp@description=\count378
 ) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen260
-\WF@size=\dimen261
-\c@WF@wrappedlines=\count341
-\WF@box=\box75
-\WF@everypar=\toks41
+\wrapoverhang=\dimen281
+\WF@size=\dimen282
+\c@WF@wrappedlines=\count379
+\WF@box=\box101
+\WF@everypar=\toks57
 Package: wrapfig 2003/01/31  v 3.6
 ) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
@@ -479,58 +639,58 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen262
-\captionmargin@=\dimen263
-\captionwidth=\dimen264
-\caption@tempdima=\dimen265
-\caption@indent=\dimen266
-\caption@parindent=\dimen267
-\caption@hangindent=\dimen268
+\captionmargin=\dimen283
+\captionmargin@=\dimen284
+\captionwidth=\dimen285
+\caption@tempdima=\dimen286
+\caption@indent=\dimen287
+\caption@parindent=\dimen288
+\caption@hangindent=\dimen289
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count342
-\c@continuedfloat=\count343
+\c@caption@flags=\count380
+\c@continuedfloat=\count381
 Package caption Info: listings package is loaded.
 Package caption Info: wrapfig package is loaded.
 )
-\c@KVtest=\count344
+\c@KVtest=\count382
 \sf@farskip=\skip55
-\sf@captopadj=\dimen269
+\sf@captopadj=\dimen290
 \sf@capskip=\skip56
 \sf@nearskip=\skip57
-\c@subfigure=\count345
-\c@subfigure@save=\count346
-\c@lofdepth=\count347
-\c@subtable=\count348
-\c@subtable@save=\count349
-\c@lotdepth=\count350
+\c@subfigure=\count383
+\c@subfigure@save=\count384
+\c@lofdepth=\count385
+\c@subtable=\count386
+\c@subtable@save=\count387
+\c@lotdepth=\count388
 \sf@top=\skip58
 \sf@bottom=\skip59
 ) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box76
-\sift@deathcycles=\count351
-\@vwid@loff=\dimen270
-\@vwid@roff=\dimen271
+\@vwid@box=\box102
+\sift@deathcycles=\count389
+\@vwid@loff=\dimen291
+\@vwid@roff=\dimen292
 ) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen272
-\ar@mcellbox=\box77
-\extrarowheight=\dimen273
-\NC@list=\toks42
+\col@sep=\dimen293
+\ar@mcellbox=\box103
+\extrarowheight=\dimen294
+\NC@list=\toks58
 \extratabsurround=\skip60
 \backup@length=\skip61
-\ar@cellbox=\box78
+\ar@cellbox=\box104
 )
-\TX@col@width=\dimen274
-\TX@old@table=\dimen275
-\TX@old@col=\dimen276
-\TX@target=\dimen277
-\TX@delta=\dimen278
-\TX@cols=\count352
-\TX@ftn=\toks43
+\TX@col@width=\dimen295
+\TX@old@table=\dimen296
+\TX@old@col=\dimen297
+\TX@target=\dimen298
+\TX@delta=\dimen299
+\TX@cols=\count390
+\TX@ftn=\toks59
 ) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/ltablex/ltablex.sty
 Package: ltablex 2014/08/13 v1.1 Modified tabularx
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/tools/longtable.sty
@@ -539,25 +699,25 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTright=\skip63
 \LTpre=\skip64
 \LTpost=\skip65
-\LTchunksize=\count353
-\LTcapwidth=\dimen279
-\LT@head=\box79
-\LT@firsthead=\box80
-\LT@foot=\box81
-\LT@lastfoot=\box82
-\LT@gbox=\box83
-\LT@cols=\count354
-\LT@rows=\count355
-\c@LT@tables=\count356
-\c@LT@chunks=\count357
-\LT@p@ftn=\toks44
+\LTchunksize=\count391
+\LTcapwidth=\dimen300
+\LT@head=\box105
+\LT@firsthead=\box106
+\LT@foot=\box107
+\LT@lastfoot=\box108
+\LT@gbox=\box109
+\LT@cols=\count392
+\LT@rows=\count393
+\c@LT@tables=\count394
+\c@LT@chunks=\count395
+\LT@p@ftn=\toks60
 )) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count358
-\float@exts=\toks45
-\float@box=\box84
-\@float@everytoks=\toks46
-\@floatcapt=\box85
+\c@float@type=\count396
+\float@exts=\toks61
+\float@box=\box110
+\@float@everytoks=\toks62
+\@floatcapt=\box111
 ) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
@@ -571,9 +731,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 ) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen280
-\Hy@linkcounter=\count359
-\Hy@pagecounter=\count360
+\@linkdim=\dimen301
+\Hy@linkcounter=\count397
+\Hy@pagecounter=\count398
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -583,7 +743,7 @@ File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel lan
 ) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count361
+\Hy@SavedSpaceFactor=\count399
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -596,17 +756,17 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count362
+\c@Hy@tempcnt=\count400
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen281
+\XeTeXLinkMargin=\dimen302
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count363
-\Field@Width=\dimen282
-\Fld@charsize=\dimen283
+\Fld@menulength=\count401
+\Field@Width=\dimen303
+\Fld@charsize=\dimen304
 Package hyperref Info: Hyper figures OFF on input line 6076.
 Package hyperref Info: Link nesting OFF on input line 6081.
 Package hyperref Info: Hyper index ON on input line 6084.
@@ -620,9 +780,9 @@ LaTeX Info: Redefining \pageref on input line 6150.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count364
-\c@Item=\count365
-\c@Hfootnote=\count366
+\Hy@abspage=\count402
+\c@Item=\count403
+\c@Hfootnote=\count404
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -631,8 +791,8 @@ File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count367
-\c@bookmark@seq@number=\count368
+\Fld@listcount=\count405
+\c@bookmark@seq@number=\count406
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -650,45 +810,45 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2021/08/26 v2.01 AMS text
 ) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen284
+\pmbraise@=\dimen305
 ) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2021/08/26 v2.02 operator names
 )
-\inf@bad=\count369
+\inf@bad=\count407
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count370
-\leftroot@=\count371
+\uproot@=\count408
+\leftroot@=\count409
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count372
-\DOTSCASE@=\count373
+\classnum@=\count410
+\DOTSCASE@=\count411
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box86
-\strutbox@=\box87
-\big@size=\dimen285
+\Mathstrutbox@=\box112
+\strutbox@=\box113
+\big@size=\dimen306
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count374
-\c@MaxMatrixCols=\count375
+\macc@depth=\count412
+\c@MaxMatrixCols=\count413
 \dotsspace@=\muskip17
-\c@parentequation=\count376
-\dspbrk@lvl=\count377
-\tag@help=\toks47
-\row@=\count378
-\column@=\count379
-\maxfields@=\count380
-\andhelp@=\toks48
-\eqnshift@=\dimen286
-\alignsep@=\dimen287
-\tagshift@=\dimen288
-\tagwidth@=\dimen289
-\totwidth@=\dimen290
-\lineht@=\dimen291
-\@envbody=\toks49
+\c@parentequation=\count414
+\dspbrk@lvl=\count415
+\tag@help=\toks63
+\row@=\count416
+\column@=\count417
+\maxfields@=\count418
+\andhelp@=\toks64
+\eqnshift@=\dimen307
+\alignsep@=\dimen308
+\tagshift@=\dimen309
+\tagwidth@=\dimen310
+\totwidth@=\dimen311
+\lineht@=\dimen312
+\@envbody=\toks65
 \multlinegap=\skip68
 \multlinetaggap=\skip69
-\mathdisplay@stack=\toks50
+\mathdisplay@stack=\toks66
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
 ) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -860,71 +1020,67 @@ runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > rep
 
 runsystem(del report.aex)...executed.
 
- (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count381
-\l__pdf_internal_box=\box88
-) (./report.aux)
+ (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 46.
-LaTeX Font Info:    Trying to load font information for FML+futm on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 50.
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 50.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 46.
-LaTeX Font Info:    Trying to load font information for FMS+futm on input line 46.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 50.
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 50.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 46.
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 46.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 50.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 50.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    ... okay on input line 50.
 Package newfloat Info: `float' package detected.
 Package newfloat Info: `wrapfig' package detected.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count382
-\scratchdimen=\dimen292
-\scratchbox=\box89
-\nofMPsegments=\count383
-\nofMParguments=\count384
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count385
-\MPscratchDim=\dimen293
-\MPnumerator=\count386
-\makeMPintoPDFobject=\count387
-\everyMPtoPDFconversion=\toks52
+\scratchcounter=\count419
+\scratchdimen=\dimen313
+\scratchbox=\box114
+\nofMPsegments=\count420
+\nofMParguments=\count421
+\everyMPshowfont=\toks67
+\MPscratchCnt=\count422
+\MPscratchDim=\dimen314
+\MPnumerator=\count423
+\makeMPintoPDFobject=\count424
+\everyMPtoPDFconversion=\toks68
 ) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@lstlisting=\count388
+\c@lstlisting=\count425
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
@@ -934,7 +1090,7 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 46.
+Package hyperref Info: Link coloring OFF on input line 50.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -942,44 +1098,44 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count389
+\c@section@level=\count426
 )
-LaTeX Info: Redefining \ref on input line 46.
-LaTeX Info: Redefining \pageref on input line 46.
-LaTeX Info: Redefining \nameref on input line 46.
+LaTeX Info: Redefining \ref on input line 50.
+LaTeX Info: Redefining \pageref on input line 50.
+LaTeX Info: Redefining \nameref on input line 50.
  (./report.out) (./report.out)
-\@outlinefile=\write7
-\openout7 = `report.out'.
+\@outlinefile=\write8
+\openout8 = `report.out'.
 
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 46.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 46.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 50.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 50.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 46.
-LaTeX Font Info:    Trying to load font information for FML+futmi on input line 50.
+(lastpage)             ! on input line 50.
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line 54.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 50.
+(Font)              scaled to size 11.03998pt on input line 54.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 50.
+(Font)              scaled to size 8.27998pt on input line 54.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 50.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
+(Font)              scaled to size 6.43999pt on input line 54.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 50.
+(Font)              scaled to size 11.03998pt on input line 54.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 50.
+(Font)              scaled to size 8.27998pt on input line 54.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 50.
+(Font)              scaled to size 6.43999pt on input line 54.
  [1
 
 {g:/Developer_Libraries/LaTeX/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./report.toc
@@ -996,8 +1152,8 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 3.
 )
-\tf@toc=\write8
-\openout8 = `report.toc'.
+\tf@toc=\write9
+\openout9 = `report.toc'.
 
  [0] (./Sections/Section_ex1.tex
 
@@ -1013,92 +1169,108 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 l.46 \end{align*}
                   [1
 
-]) (./Sections/Section_ex2.tex
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46002pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46002pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
+
+[2]) (./Sections/Section_ex2.tex) (./Sections/Section_ex3.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46002pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46002pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
+
+[3]
+Overfull \hbox (42.48189pt too wide) in paragraph at lines 105--106
+\T1/futs/m/n/10 note that signs of the ei-gen-vector can be dif-fe-rent. e.g. $\FML/futmi/m/it/10 eigenvector[]$ \T1/futs/m/n/10 could be $[0\FML/futmi/m/it/10 :\T1/futs/m/n/10 9487\FML/futmi/m/it/10 ; \T1/futs/m/n/10 0\FML/futmi/m/it/10 :\T1/futs/m/n/10 3161][]$ 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46002pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46002pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
+
+[4]) (./Sections/Section_ex4.tex
+<Figures/Q4_a_galaxiesPlot.png, id=196, 380.42125pt x 279.0425pt>
+File: Figures/Q4_a_galaxiesPlot.png Graphic file (type png)
+<use Figures/Q4_a_galaxiesPlot.png>
+Package pdftex.def Info: Figures/Q4_a_galaxiesPlot.png  used on input line 7.
+(pdftex.def)             Requested size: 258.75pt x 189.80173pt.
+<Figures/Q4_b_wMatrix_plot.png, id=198, 380.42125pt x 279.0425pt>
+File: Figures/Q4_b_wMatrix_plot.png Graphic file (type png)
+<use Figures/Q4_b_wMatrix_plot.png>
+Package pdftex.def Info: Figures/Q4_b_wMatrix_plot.png  used on input line 16.
+(pdftex.def)             Requested size: 258.75pt x 189.80173pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46002pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46002pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
+
+[5 <./Figures/Q4_a_galaxiesPlot.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46002pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46002pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
+
+[6 <./Figures/Q4_b_wMatrix_plot.png>]) (./Sections/Section_ex5.tex
+Underfull \hbox (badness 10000) in paragraph at lines 34--58
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46002pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46002pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
+
+[7]
+Overfull \hbox (138.72916pt too wide) in paragraph at lines 104--106
+\T1/futs/m/n/10 Aswell as the in-for-ma-tion gain using the fun-ctions gin-ven in our lec-tu-re sli-des (L10_Classification_Regression_2_Part3,
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46002pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46002pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
+
+[8]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.46002pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.46002pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
+
+[9]) (./Sections/Section_ex6.tex
 \openout3 = `report.pyg'.
 
- (./_minted-report/default-pyg-prefix.pygstyle) (./_minted-report/default.pygstyle) (./_minted-report/884A6F2346D979774FE1CC3959C245457C2E7F49E087B8E8E8DF5244CE287E39.pygtex
+ (./_minted-report/default-pyg-prefix.pygstyle) (./_minted-report/default.pygstyle) (./_minted-report/8AA373C7E14FDBDD16AF7B863E6D3DA77C2E7F49E087B8E8E8DF5244CE287E39.pygtex
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
-)
-<example-image-a.pdf, id=174, 321.2pt x 240.9pt>
-File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 11.
-(pdftex.def)             Requested size: 258.75pt x 194.06927pt.
-)
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.46002pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.46002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
-
-[2] (./Sections/Section_ex3.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.46002pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.46002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
-
-[3 <g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/mwe/example-image-a.pdf>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.46002pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.46002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
-
-[4])
-Overfull \hbox (42.48189pt too wide) in paragraph at lines 105--76
-\T1/futs/m/n/10 note that signs of the ei-gen-vector can be dif-fe-rent. e.g. $\FML/futmi/m/it/10 eigenvector[]$ \T1/futs/m/n/10 could be $[0\FML/futmi/m/it/10 :\T1/futs/m/n/10 9487\FML/futmi/m/it/10 ; \T1/futs/m/n/10 0\FML/futmi/m/it/10 :\T1/futs/m/n/10 3161][]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--76
-
- []
-
-(./Sections/Section_ex4.tex
-<Figures/Q4_a_galaxiesPlot.png, id=210, 380.42125pt x 279.0425pt>
-File: Figures/Q4_a_galaxiesPlot.png Graphic file (type png)
-<use Figures/Q4_a_galaxiesPlot.png>
-Package pdftex.def Info: Figures/Q4_a_galaxiesPlot.png  used on input line 9.
-(pdftex.def)             Requested size: 258.75pt x 189.80173pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.46002pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.46002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
-
-[5]
-<Figures/Q4_b_wMatrix_plot.png, id=218, 380.42125pt x 279.0425pt>
-File: Figures/Q4_b_wMatrix_plot.png Graphic file (type png)
-<use Figures/Q4_b_wMatrix_plot.png>
-Package pdftex.def Info: Figures/Q4_b_wMatrix_plot.png  used on input line 19.
-(pdftex.def)             Requested size: 258.75pt x 189.80173pt.
-) (./Sections/Section_ex5.tex) (./Sections/Section_ex6.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.46002pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.46002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
-
-[6 <./Figures/Q4_a_galaxiesPlot.png> <./Figures/Q4_b_wMatrix_plot.png>]
-\openout3 = `report.pyg'.
-
- (./_minted-report/8AA373C7E14FDBDD16AF7B863E6D3DA77C2E7F49E087B8E8E8DF5244CE287E39.pygtex
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 2.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 3.
+
 Overfull \hbox (343.33337pt too wide) in paragraph at lines 18--18
 \T1/cmtt/m/n/10 loaddata([]\TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 D:[][]\\[][]Uddannelse[][]\\[][]Datalogi[][]\\[][]KU[][]\\[][]2_aar[][]\\[][]MAD[][]\\[][]MAD2021[][]\\[][]2022_Exam[][]\\[][]exam_data[][]\\[][]data[][]\\[][]accent-mfcc-data_shuffled_train.txt\TS1/cmtt/m/n/10 '[]\T1/cmtt/m/n/10 )|  
  []
@@ -1120,10 +1292,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
 
-[7]
+[10]
 \openout3 = `report.pyg'.
 
  (./_minted-report/D2CF65323B952BE46A13AF6F829495CB7C2E7F49E087B8E8E8DF5244CE287E39.pygtex)
+Overfull \vbox (0.79196pt too high) detected at line 128
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 22.46002pt, for example:
@@ -1131,7 +1306,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
 
-[8]
+[11]
 Overfull \hbox (1.4154pt too wide) in paragraph at lines 137--137
 []\T1/cmtt/m/n/10 {\TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 criterion\TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 : \TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 gini\TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 , \TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 max_features\TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 : \TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 sqrt\TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 , \TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 max_tree_depth\TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 : 5}[] 
  []
@@ -1171,7 +1346,6 @@ Overfull \hbox (22.41028pt too wide) in paragraph at lines 170--170
 []\T1/cmtt/m/n/10 {\TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 criterion\TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 : \TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 entropy\TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 , \TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 max_features\TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 : \TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 sqrt\TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 , \TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 max_tree_depth\TS1/cmtt/m/n/10 '\T1/cmtt/m/n/10 : 15}[] 
  []
 
-)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 22.46002pt, for example:
@@ -1179,7 +1353,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
 
-[9]
+[12]
 Overfull \vbox (54.3313pt too high) has occurred while \output is active []
 
 
@@ -1190,7 +1364,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
 
-[10] (./Sections/Section_ex7.tex
+[13]) (./Sections/Section_ex7.tex
 \openout3 = `report.pyg'.
 
  (./_minted-report/EA7D24F4AEE89D1AB3894A5B9E1B51787C2E7F49E087B8E8E8DF5244CE287E39.pygtex))
@@ -1201,10 +1375,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
 
-[11] (./Sections/Appendix_a.tex
+[14] (./Sections/Appendix_a.tex
 \openout3 = `report.pyg'.
 
- (./_minted-report/F8D4093EBCF5FD08222BC67B56AF5B8E7C2E7F49E087B8E8E8DF5244CE287E39.pygtex) [12]) (./Sections/Appendix_b.tex
+ (./_minted-report/F8D4093EBCF5FD08222BC67B56AF5B8E7C2E7F49E087B8E8E8DF5244CE287E39.pygtex) [15]) (./Sections/Appendix_b.tex
 \openout3 = `report.pyg'.
 
  (./_minted-report/F8D4093EBCF5FD08222BC67B56AF5B8E7C2E7F49E087B8E8E8DF5244CE287E39.pygtex)
@@ -1215,7 +1389,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
 
-[13]) (./Sections/Appendix_q6.tex
+[16]) (./Sections/Appendix_q6.tex
 \openout3 = `report.pyg'.
 
  (./_minted-report/F90E9551111763D3266AE9DE01337C5B7C2E7F49E087B8E8E8DF5244CE287E39.pygtex
@@ -1239,7 +1413,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
 
-[14]
+[17]
 Underfull \vbox (badness 10000) detected at line 97
  []
 
@@ -1250,7 +1424,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
 
-[15]
+[18]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 22.46002pt, for example:
@@ -1258,7 +1432,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
 
-[16]) (./Sections/Appendix_q6_c.tex
+[19]) (./Sections/Appendix_q6_c.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
 
  []
@@ -1370,27 +1544,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.46002pt}.
 
-[17]) 
+[20]) 
 AED: lastpage setting LastPage
 (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 9235D5979EED3B00A3AF722D35CD24ED;4267.
+(rerunfilecheck)             Checksum: A0D0E3DCFE4D6F4F0D0D366243C6E825;4389.
 runsystem(del report.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 29307 strings out of 478353
- 555779 string characters out of 5839074
- 891230 words of memory out of 5000000
- 46738 multiletter control sequences out of 15000+600000
+ 42049 strings out of 478353
+ 918517 string characters out of 5839074
+ 1263830 words of memory out of 5000000
+ 59365 multiletter control sequences out of 15000+600000
  508704 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,19n,133p,1120b,749s stack positions out of 5000i,500n,10000p,200000b,80000s
-{g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/lm/lmss17.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on report.pdf (19 pages, 219675 bytes).
+ 99i,19n,133p,1694b,1184s stack positions out of 5000i,500n,10000p,200000b,80000s
+{g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on report.pdf (22 pages, 215213 bytes).
 PDF statistics:
- 364 PDF objects out of 1000 (max. 8388607)
- 309 compressed objects within 4 object streams
- 64 named destinations out of 1000 (max. 500000)
- 260 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 371 PDF objects out of 1000 (max. 8388607)
+ 314 compressed objects within 4 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 253 words of extra memory for PDF output out of 10000 (max. 10000000)
 
