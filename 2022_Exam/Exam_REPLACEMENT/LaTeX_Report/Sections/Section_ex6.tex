@@ -28,10 +28,10 @@ def loaddata(filename):
     return t, X
 
 # Loads the training data
-X_train, t_train = loaddata('D:\\Uddannelse\\Datalogi\\KU\\2_aar\\MAD\\MAD2021\\2022_Exam\\exam_data\\data\\accent-mfcc-data_shuffled_train.txt')
+X_train, t_train = loaddata("./accent-mfcc-data_shuffled_train.txt")
 
 # Loads the validation data
-X_validation, t_validation = loaddata('D:\\Uddannelse\\Datalogi\\KU\\2_aar\\MAD\\MAD2021\\2022_Exam\\exam_data\\data\\accent-mfcc-data_shuffled_validation.txt')
+X_validation, t_validation = loaddata("./accent-mfcc-data_shuffled_validation.txt")
 
 \end{minted}
 
@@ -41,7 +41,7 @@ it to predict - see the submitted code in section \ref{Code_setup}
 
 
 \subsection{b) - Finding the optimal set of random forest classifier parameters}
-I've chosae to use two extra packages in order to implement my Random Forest algorithm.
+I've chosen to use two extra packages in order to implement my Random Forest algorithm.
 It hasn't been specified that I'm not allowed to use other packages from the \textbf{Sklean} library
 so I assume that this is a possible solution.
 \\
@@ -69,6 +69,10 @@ However it comes with the cost of a more computational complexity aswell. The se
 shows the terminal output from the optimization loop.
 I've appended a sorted print of the permutated parameters in the appendix. 
 
+Assessing the result, I get the optimal results from the algorithm with the parameters:
+\begin{verbatim}
+{'criterion': 'entropy', 'max_tree_depth': 10, 'max_features': 'sqrt'}
+\end{verbatim}
 
 
 %--------------------------------------------------------------------------

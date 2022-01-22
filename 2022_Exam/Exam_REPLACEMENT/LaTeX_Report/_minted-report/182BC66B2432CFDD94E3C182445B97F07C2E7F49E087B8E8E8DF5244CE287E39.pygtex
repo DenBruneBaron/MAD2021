@@ -1,0 +1,29 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k}{def} \PYG{n+nf}{k\PYGZus{}mean\PYGZus{}clustering}\PYG{p}{(}\PYG{n}{k}\PYG{p}{,} \PYG{n}{data}\PYG{p}{,} \PYG{n}{centroids}\PYG{p}{):}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{    K\PYGZhy{}means clustering}
+
+\PYG{l+s+sd}{    Params:}
+\PYG{l+s+sd}{    \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{l+s+sd}{    k : number of clusters}
+\PYG{l+s+sd}{    data : (n\PYGZus{}samples, n\PYGZus{}features) (normalized) data matrix}
+
+\PYG{l+s+sd}{    Returns:}
+\PYG{l+s+sd}{    \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{l+s+sd}{    assignments, intra\PYGZus{}cluster\PYGZus{}dist : tuple}
+
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{n}{current\PYGZus{}assignments} \PYG{o}{=} \PYG{n}{assign\PYGZus{}datapoints\PYGZus{}to\PYGZus{}centroids}\PYG{p}{(}\PYG{n}{data}\PYG{p}{,} \PYG{n}{centroids}\PYG{p}{)}
+
+    \PYG{n}{new\PYGZus{}assignments} \PYG{o}{=} \PYG{p}{[]} \PYG{c+c1}{\PYGZsh{} initial empty value}
+
+    \PYG{k}{while} \PYG{o+ow}{not} \PYG{n}{np}\PYG{o}{.}\PYG{n}{array\PYGZus{}equal}\PYG{p}{(}\PYG{n}{current\PYGZus{}assignments}\PYG{p}{,} \PYG{n}{new\PYGZus{}assignments}\PYG{p}{):}
+        \PYG{c+c1}{\PYGZsh{} repeat until assignments does not change}
+        \PYG{n}{centroids} \PYG{o}{=} \PYG{n}{calculate\PYGZus{}new\PYGZus{}centroids}\PYG{p}{(}\PYG{n}{data}\PYG{p}{,} \PYG{n}{current\PYGZus{}assignments}\PYG{p}{,} \PYG{n}{centroids}\PYG{p}{)}
+        \PYG{n}{current\PYGZus{}assignments} \PYG{o}{=} \PYG{n}{new\PYGZus{}assignments}
+        \PYG{n}{new\PYGZus{}assignments} \PYG{o}{=} \PYG{n}{assign\PYGZus{}datapoints\PYGZus{}to\PYGZus{}centroids}\PYG{p}{(}\PYG{n}{data}\PYG{p}{,} \PYG{n}{centroids}\PYG{p}{)}
+
+    \PYG{n}{intra\PYGZus{}cluster\PYGZus{}dist} \PYG{o}{=} \PYG{n}{compute\PYGZus{}sum\PYGZus{}intra\PYGZus{}cluster\PYGZus{}dist}\PYG{p}{(}\PYG{n}{data}\PYG{p}{,} \PYG{n}{current\PYGZus{}assignments}\PYG{p}{,} \PYG{n}{centroids}\PYG{p}{)}
+
+    \PYG{k}{return} \PYG{n}{current\PYGZus{}assignments}\PYG{p}{,} \PYG{n}{intra\PYGZus{}cluster\PYGZus{}dist}
+\end{Verbatim}

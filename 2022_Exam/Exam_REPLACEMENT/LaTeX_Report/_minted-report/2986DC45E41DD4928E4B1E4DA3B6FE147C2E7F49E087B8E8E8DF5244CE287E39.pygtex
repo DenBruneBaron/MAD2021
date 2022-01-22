@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Modified the loaddata function to make the training features into 2d np.array, more specifically the \PYGZsq{}t value\PYGZsq{}}
+\PYG{k}{def} \PYG{n+nf}{loaddata}\PYG{p}{(}\PYG{n}{filename}\PYG{p}{):}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}Load the balloon data set from filename and return t, X}
+\PYG{l+s+sd}{        t \PYGZhy{} N\PYGZhy{}dim. vector of target (temperature) values}
+\PYG{l+s+sd}{        X \PYGZhy{} N\PYGZhy{}dim. vector containing the inputs (lift) x for each data point}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{c+c1}{\PYGZsh{} Load data set from CSV file}
+    \PYG{n}{Xt} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{loadtxt}\PYG{p}{(}\PYG{n}{filename}\PYG{p}{,} \PYG{n}{delimiter}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{},\PYGZsq{}}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} Split into data matrix and target vector}
+    \PYG{n}{X} \PYG{o}{=} \PYG{n}{Xt}\PYG{p}{[:,}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{c+c1}{\PYGZsh{} Matrix}
+    \PYG{n}{t} \PYG{o}{=} \PYG{n}{Xt}\PYG{p}{[:,}\PYG{l+m+mi}{1}\PYG{p}{:]} \PYG{c+c1}{\PYGZsh{} Vector}
+
+    \PYG{k}{return} \PYG{n}{t}\PYG{p}{,} \PYG{n}{X}
+
+\PYG{c+c1}{\PYGZsh{} Loads the training data}
+\PYG{n}{X\PYGZus{}train}\PYG{p}{,} \PYG{n}{t\PYGZus{}train} \PYG{o}{=} \PYG{n}{loaddata}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}./accent\PYGZhy{}mfcc\PYGZhy{}data\PYGZus{}shuffled\PYGZus{}train.txt\PYGZdq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Loads the validation data}
+\PYG{n}{X\PYGZus{}validation}\PYG{p}{,} \PYG{n}{t\PYGZus{}validation} \PYG{o}{=} \PYG{n}{loaddata}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}./accent\PYGZhy{}mfcc\PYGZhy{}data\PYGZus{}shuffled\PYGZus{}validation.txt\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}

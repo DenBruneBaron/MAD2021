@@ -25,15 +25,15 @@
 \PYG{l+s+sd}{QUESTION 6 \PYGZhy{} A}
 \PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
 \PYG{c+c1}{\PYGZsh{} Loads the training data}
-\PYG{n}{X\PYGZus{}train}\PYG{p}{,} \PYG{n}{t\PYGZus{}train} \PYG{o}{=} \PYG{n}{loaddata}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}D:}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{Uddannelse}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{Datalogi}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{KU}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{2\PYGZus{}aar}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{MAD}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{MAD2021}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{2022\PYGZus{}Exam}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{exam\PYGZus{}data}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{data}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{accent\PYGZhy{}mfcc\PYGZhy{}data\PYGZus{}shuffled\PYGZus{}train.txt\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{X\PYGZus{}train}\PYG{p}{,} \PYG{n}{t\PYGZus{}train} \PYG{o}{=} \PYG{n}{loaddata}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}./accent\PYGZhy{}mfcc\PYGZhy{}data\PYGZus{}shuffled\PYGZus{}train.txt\PYGZdq{}}\PYG{p}{)}
 
 \PYG{c+c1}{\PYGZsh{} Loads the validation data}
-\PYG{n}{X\PYGZus{}validation}\PYG{p}{,} \PYG{n}{t\PYGZus{}validation} \PYG{o}{=} \PYG{n}{loaddata}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}D:}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{Uddannelse}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{Datalogi}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{KU}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{2\PYGZus{}aar}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{MAD}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{MAD2021}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{2022\PYGZus{}Exam}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{exam\PYGZus{}data}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{data}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{accent\PYGZhy{}mfcc\PYGZhy{}data\PYGZus{}shuffled\PYGZus{}validation.txt\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{X\PYGZus{}validation}\PYG{p}{,} \PYG{n}{t\PYGZus{}validation} \PYG{o}{=} \PYG{n}{loaddata}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}./accent\PYGZhy{}mfcc\PYGZhy{}data\PYGZus{}shuffled\PYGZus{}validation.txt\PYGZdq{}}\PYG{p}{)}
 
-\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Shape of training targets: }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{t\PYGZus{}train}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{))}
-\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Shape of training features: }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{X\PYGZus{}train}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{))}
-\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Shape of validation targets: }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{t\PYGZus{}validation}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{))}
-\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Shape of validation features: }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{X\PYGZus{}validation}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Shape of train targets: }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{t\PYGZus{}train}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Shape of train features: }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{X\PYGZus{}train}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Shape of val targets: }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{t\PYGZus{}validation}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{))}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Shape of val features: }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{X\PYGZus{}validation}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{))}
 \PYG{n+nb}{print}\PYG{p}{()}
 
 

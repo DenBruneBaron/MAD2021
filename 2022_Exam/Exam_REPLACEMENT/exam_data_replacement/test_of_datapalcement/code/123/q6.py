@@ -1,6 +1,11 @@
-\section{Appendix Q6}
+# Modelling and Analysis of Data
+# Exam 2022 : Date  17th - 25th of January
+# Exam no: 39
 
-\begin{minted}[linenos, bgcolor = bg, breaklines]{python}
+# Question 6 (Classification & Validation, 4 points)
+# Question A and B
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score
@@ -10,12 +15,12 @@ from sklearn.ensemble import RandomForestClassifier
 # Modified the loaddata function to make the training features into
 # 2d np.array, more specifically the 't value'
 def loaddata(filename):
-    """Load the balloon data set from filename and return t, X
+    """Load the accent-mfcc-data set from filename and return t, X
         t - N-dim. vector of target (temperature) values
         X - N-dim. vector containing the inputs (lift) x for each data point
     """
     # Load data set from CSV file
-    Xt = np.loadtxt(filename, delimiter=',')
+    Xt = np.loadtxt(filename, delimiter=",")
     
     # Split into data matrix and target vector
     X = Xt[:,0] # Matrix
@@ -32,10 +37,11 @@ X_train, t_train = loaddata("./accent-mfcc-data_shuffled_train.txt")
 # Loads the validation data
 X_validation, t_validation = loaddata("./accent-mfcc-data_shuffled_validation.txt")
 
-print("Shape of train targets: %s" %str(t_train.shape))
-print("Shape of train features: %s" %str(X_train.shape))
-print("Shape of val targets: %s" %str(t_validation.shape))
-print("Shape of val features: %s" %str(X_validation.shape))
+
+print("Shape of training targets: %s" %str(t_train.shape))
+print("Shape of training features: %s" %str(X_train.shape))
+print("Shape of validation targets: %s" %str(t_validation.shape))
+print("Shape of validation features: %s" %str(X_validation.shape))
 print()
 
 
@@ -93,7 +99,3 @@ for params in list(ParameterGrid(random_f_parameters)):
 
 for x in res:
     print(x[0])
-
-\end{minted}
-
-\newpage

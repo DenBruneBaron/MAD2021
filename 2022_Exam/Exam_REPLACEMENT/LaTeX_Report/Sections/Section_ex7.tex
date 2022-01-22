@@ -17,10 +17,64 @@ value x by subtracting the mean and dividion by the standard deviation.
 
 \subsection {b)}
 % b) provide a code snippet in the report showing your K-means implementation
+Below is a codesnippet of my implementation of the k-mean clustering.
+I've definde multiple helperfunctions, which can be found in the source code or in
+the appendix.
+\begin{minted}[linenos, bgcolor = bg, breaklines]{python}
+    def k_mean_clustering(k, data, centroids):
+    """
+    K-means clustering
 
+    Params:
+    ------
+    k : number of clusters
+    data : (n_samples, n_features) (normalized) data matrix
+
+    Returns:
+    --------
+    assignments, intra_cluster_dist : tuple
+
+    """
+    current_assignments = assign_datapoints_to_centroids(data, centroids)
+
+    new_assignments = [] # initial empty value
+
+    while not np.array_equal(current_assignments, new_assignments):
+        # repeat until assignments does not change
+        centroids = calculate_new_centroids(data, current_assignments, centroids)
+        current_assignments = new_assignments
+        new_assignments = assign_datapoints_to_centroids(data, centroids)
+
+    intra_cluster_dist = compute_sum_intra_cluster_dist(data, current_assignments, centroids)
+    
+    return current_assignments, intra_cluster_dist
+
+\end{minted}
 % c) include the number of samples in each cluster in the report
+The results of the k-means cluster algorithm with k = 3. The algorithm has been
+implemented with \textit{\textbf{np.random.default\_rng}} which constructs a random generator
+so that a desired "seed\_value" can be reproduced. 
 
+\subsection {c)}
+Here's a print of the values that I get from the k-means clustering algorithm, when
+using seed: 1
+\begin{verbatim}
+    Calculations with seed value: 1
+    Smallest Intra-Cluster Distance: 268.5510
+    Number of samples in cluster 0: 67
+    Number of samples in cluster 1: 66
+    Number of samples in cluster 2: 67
+\end{verbatim}
+
+\subsection {d)}
 % d) provide a code snippet and explanation of what you did in the report
+I've reused code that has been handed out in the assignments aswell
+as my own implementation of PCA from Assignment 5.
 
+\subsection {e)}
 % e) include a code snippet, the plot and your reflections on the results in the report.
-
+\begin{figure}[H]
+    \centering
+        \includegraphics[width=0.75\textwidth]{Figures/K-means.png}
+    \caption{Caption of figure here}
+\end{figure}

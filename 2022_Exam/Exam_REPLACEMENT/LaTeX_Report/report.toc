@@ -20,10 +20,13 @@
 \contentsline {section}{\numberline {7}Problem 7 - K-means Clustering \& Principal Component Analysis}{14}{section.7}%
 \contentsline {subsection}{\numberline {7.1}a)}{14}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}b)}{14}{subsection.7.2}%
-\contentsline {section}{\numberline {8}Appendix A}{15}{section.8}%
-\contentsline {subsection}{\numberline {8.1}...}{15}{subsection.8.1}%
-\contentsline {section}{\numberline {9}Appendix B}{16}{section.9}%
-\contentsline {subsection}{\numberline {9.1}...}{16}{subsection.9.1}%
-\contentsline {section}{\numberline {10}Appendix Q6}{17}{section.10}%
-\contentsline {section}{\numberline {11}Appendix X}{20}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Q6\_c}{20}{subsection.11.1}%
+\contentsline {subsection}{\numberline {7.3}c)}{15}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}d)}{15}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}e)}{16}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Appendix A}{17}{section.8}%
+\contentsline {subsection}{\numberline {8.1}...}{17}{subsection.8.1}%
+\contentsline {section}{\numberline {9}Appendix B}{18}{section.9}%
+\contentsline {subsection}{\numberline {9.1}...}{18}{subsection.9.1}%
+\contentsline {section}{\numberline {10}Appendix Q6}{19}{section.10}%
+\contentsline {section}{\numberline {11}Appendix X}{22}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Q6\_c}{22}{subsection.11.1}%
