@@ -28,14 +28,14 @@ Step three is to calculate the covariances for XX, XY and YY using the normalize
 \begin{equation}
     \begin{split}
         cov(xx) = & \frac{1}{8} \Big(0.15^2 + 0.05^2 + 0.65^2 + (-0.95)^2 \\
-                  & + (-0.25)^2 + (-0.55)^2 + 0.55^2 \Big) = 0.2675
+                  & + (-0.25)^2 + (-0.55)^2 + 0.55^2 \Big) \approx 0.27
     \end{split}
 \end{equation}
 
 \begin{equation}
     \begin{split}
         cov(yy) = & \frac{1}{8} \Big(0.4625^2 + 0.3625^2 + 1.3625^2 + (-0.4375)^2 + \\
-                  &(-0.7375)^2 + (-0.7375)^2 + (-2.1375)^2 + 1.8625^2 \Big) = 1.439843750
+                  &(-0.7375)^2 + (-0.7375)^2 + (-2.1375)^2 + 1.8625^2 \Big) \approx 1.44
     \end{split}
 \end{equation}
 
@@ -43,7 +43,7 @@ Step three is to calculate the covariances for XX, XY and YY using the normalize
     \begin{split}
         cov(xy) = & \frac{1}{8} \Big( (0.15\cdot 0.4625 + 0.05 \cdot 0.3625 + 0.65 \cdot  1.3625 + ((-0.95)\cdot (-0.4375))\\
                   &  + 0.35 \cdot (-0.7375) + ((-0.25)\cdot (-0.7375)) + ((-0.55)\cdot (-2.1375))\\
-                  &  + 0.55 \cdot 1.8625) \Big) = 0.439375
+                  &  + 0.55 \cdot 1.8625) \Big) \approx 0.44
     \end{split}
 \end{equation}
 
@@ -56,9 +56,10 @@ cov = \begin{pmatrix}
  \end{pmatrix}
  = 
 $$
+
 $$ cov = \begin{pmatrix}
-            0.2675 & 0.439375 \\
-            0.439375 & 1.439843750
+            0.27 & 0.44 \\
+            0.44 & 1.44
          \end{pmatrix}$$
 
 
@@ -79,17 +80,17 @@ $$
 Solving the system equation that I get from uising the Characteristics equation on the covariance matrix
 i get the following eigenvalues.
 $$\begin{pmatrix}
-    0.2675 - \lambda & 0.439375 \\
-    0.439375 & 1.439843750 - \lambda
+    0.27 - \lambda & 0.44 \\
+    0.44 & 1.44 - \lambda
 \end{pmatrix}
 = 0
 $$
 First I get the equation by calulating the determinant
-$$det(cov) \rightarrow ((0.2675 - \lambda) \cdot (1.439843750 - \lambda)) - (0.439375 \cdot 0.439375) $$
+$$det(cov) \rightarrow ((0.27 - \lambda) \cdot (1.44 - \lambda)) - (0.44 \cdot 0.44) $$
 Then setting the equation equal to zero and solving it will give me the two values for $\lambda$ which is the
 eigenvalues.
-$$((0.2675 - \lambda) \cdot (1.439843750 - \lambda)) - (0.439375 \cdot 0.439375) = 0$$
-$$eigenvalue_1 = 0.1211093468 \quad \quad eigenvalue_2 = 1.586234403$$
+$$((0.2675 - \lambda) \cdot (1.44 - \lambda)) - (0.44 \cdot 0.44) = 0$$
+$$eigenvalue_1 = 1.59 \quad \quad eigenvalue_2 = 0.12$$
 
 
 \subsection{3) - Two eigenvectors}
@@ -97,11 +98,69 @@ I order to find the eigenvectors I use the definition of an eigenvector $A\bar{\
 and solve this this equation.
 $$cov \cdot \bar{x} = \lambda \cdot \bar{x}$$
 
-I'm going to do the calculations in Maple since I'm dealing with odd numbers. I also going to
-reduce some of the decimals by rounding off just for readabilitys sake.
+finding the eigenvectors, using the equation stated above, I have two equations systems.
+\begin{align*}
+    & 0.27 x_1 + 0.44 x_2 = 1.59 x_1 \\
+    & 0.44 x_1 + 1.44 x_1 = 1.59 x_2 \\
+\end{align*}
+and 
+\begin{align*}
+    & 0.27 x_1 + 0.44 x_2 = 0.12 x_1 \\
+    & 0.44 x_1 + 1.44 x_1 = 0.12 x_2 \\
+\end{align*}
 
-$$eigenvector_1 = [-0.9487, -0.3161] \quad \quad eigenvector_2 = [0.3161, -0.9487]$$
+solving these systems of equations using basic equation arithmetic
 
-\noindent note that signs of the eigenvector can be different. e.g. $eigenvector_1$ could be $[0.9487, 0.3161][]$
+\begin{align*}
+    & 0.44 x_2 = (1.59 - 0.27) x_1 \\
+    & x_2 = \frac{1.32}{0.44} x_1 \\
+    & x_2 = 3 x_1 \\
+    \\
+    & \text{thus, if} \quad x_1 = 1 \\
+    & \text{then} \quad \quad x_2 = 3 
+\end{align*}
+Now that I have the values for $x_1 and x_2$
+I can find the actual eigenvector, by finding the unit vector for the vector     
+$
+\bar{x} = \begin{bmatrix}
+    1 \\
+    3 \\
+  \end{bmatrix}
+$
+to find the unit vector I'm using the formula $\frac{1}{||\bar{v}||} \cdot \bar{v}$
+which is equivalent to
+\begin{align*}
+    &\frac{1}{\sqrt{(1^2 + 3^2)}} \cdot 
+                            \begin{bmatrix}
+                                1 \\
+                                3 \\
+                            \end{bmatrix} \\
+    \\
+                            &\frac{3}{\sqrt{(1^2 + 3^2)}} \cdot 
+                            \begin{bmatrix}
+                                1 \\
+                                3 \\
+                            \end{bmatrix} \\
+    \\
+    & x_1 = 0.316 \quad \quad x_2 = 0.948
+\end{align*}
+I've shown the calulations for the first system, with the first equation and I think
+it's fair to say that finding the second eigenvector is by doing excatly the same, with
+the only exception being that lambda now is the second eigenvalue.
+Thus my eigenvectors are:
+\begin{align*}
+    Eigenvector_1 = \begin{bmatrix}
+        0.316 \\
+        0.949 \\
+    \end{bmatrix} 
+\quad 
+    Eigenvector_2 = \begin{bmatrix}
+        -0.949 \\
+        0.316 \\
+    \end{bmatrix} \\
+\end{align*}
+
+\noindent note that signs of the eigenvector can be different. Depending on how you choose to
+solve your equation systems.
 
 \newpage

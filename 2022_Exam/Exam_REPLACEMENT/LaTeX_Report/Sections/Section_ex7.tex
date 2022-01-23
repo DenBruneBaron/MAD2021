@@ -71,10 +71,36 @@ using seed: 1
 I've reused code that has been handed out in the assignments aswell
 as my own implementation of PCA from Assignment 5.
 
+The code below shows how I've reused code in order to reduce the 
+dimensions of data from the k-means clustering algorithm.
+\begin{minted}[linenos, bgcolor = bg, breaklines]{python}
+    def __transformData(features, PCevecs):
+        """
+        Reused from A5
+        """
+        return np.dot(features,  PCevecs[:, 0:2])
+
+    PCevals, PCevecs = __PCA(normalized_data)
+
+    # Convert data to two dimemsions using PCA
+    features2D = __transformData(normalized_data, PCevecs)
+    centroids2D = __transformData(centroids, PCevecs)
+\end{minted}
+
+I've also added a single line of code to the already provided
+"\_\_visualizeLabels()" function
+
+\begin{minted}[linenos, bgcolor = bg, breaklines]{python}
+    plt.scatter(centroids[:, 0], centroids[:,1], c = 'black', s=100)
+\end{minted}
+
 \subsection {e)}
 % e) include a code snippet, the plot and your reflections on the results in the report.
+Figure 7 shows the plotted data of the k-means after PCA. 
+There is a clear separation between the points around each centroid. My result look similar
+as the example show in our exam question, except that my clusters have been flipped vertically.
 \begin{figure}[H]
     \centering
         \includegraphics[width=0.75\textwidth]{Figures/K-means.png}
-    \caption{Caption of figure here}
+    \caption{Plot of the K-means cluster after PCA}
 \end{figure}

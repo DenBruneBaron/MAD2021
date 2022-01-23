@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k}{def} \PYG{n+nf}{\PYGZus{}\PYGZus{}transformData}\PYG{p}{(}\PYG{n}{features}\PYG{p}{,} \PYG{n}{PCevecs}\PYG{p}{):}
+        \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{        Reused from A5}
+\PYG{l+s+sd}{        \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+        \PYG{k}{return} \PYG{n}{np}\PYG{o}{.}\PYG{n}{dot}\PYG{p}{(}\PYG{n}{features}\PYG{p}{,}  \PYG{n}{PCevecs}\PYG{p}{[:,} \PYG{l+m+mi}{0}\PYG{p}{:}\PYG{l+m+mi}{2}\PYG{p}{])}
+
+    \PYG{n}{PCevals}\PYG{p}{,} \PYG{n}{PCevecs} \PYG{o}{=} \PYG{n}{\PYGZus{}\PYGZus{}PCA}\PYG{p}{(}\PYG{n}{normalized\PYGZus{}data}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} Convert data to two dimemsions using PCA}
+    \PYG{n}{features2D} \PYG{o}{=} \PYG{n}{\PYGZus{}\PYGZus{}transformData}\PYG{p}{(}\PYG{n}{normalized\PYGZus{}data}\PYG{p}{,} \PYG{n}{PCevecs}\PYG{p}{)}
+    \PYG{n}{centroids2D} \PYG{o}{=} \PYG{n}{\PYGZus{}\PYGZus{}transformData}\PYG{p}{(}\PYG{n}{centroids}\PYG{p}{,} \PYG{n}{PCevecs}\PYG{p}{)}
+\end{Verbatim}
